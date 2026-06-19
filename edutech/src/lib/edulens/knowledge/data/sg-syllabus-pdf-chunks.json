@@ -1,0 +1,196 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-06-12",
+  "generator": "curated-offline from MOE 6092/6091 syllabus PDFs; re-run npm run index:syllabus when PDFs are available",
+  "chunks": [
+    {
+      "id": "6092-sec-structure",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "Content structure — Sections I–III",
+      "content": "Section I Matter – Structures and Properties: Experimental Chemistry; Particulate Nature of Matter; Chemical Bonding and Structure. Section II Chemical Reactions: Chemical Calculations; Acid-Base Chemistry; Qualitative Analysis; Redox Chemistry; Patterns in the Periodic Table; Chemical Energetics; Rate of Reactions. Section III Chemistry in a Sustainable World: Organic Chemistry; Maintaining Air Quality.",
+      "matchKeywords": ["chemistry", "6092", "structure", "sections", "syllabus", "化学"]
+    },
+    {
+      "id": "6092-exp-chem",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "1. Experimental Chemistry",
+      "content": "Candidates name apparatus for time, temperature, mass and volume (burettes, pipettes, measuring cylinders, gas syringes). Separation methods: filtration, crystallisation, distillation, fractional distillation, separating funnel, paper chromatography. Interpret chromatograms and Rf values. Deduce purity from melting and boiling point data.",
+      "matchKeywords": ["experimental", "purification", "chromatography", "distillation", "apparatus", "实验", "分离"]
+    },
+    {
+      "id": "6092-particulate",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "2. The Particulate Nature of Matter",
+      "content": "Describe solid, liquid and gaseous states and interconversion using kinetic particle theory. Explain diffusion of particles in liquids and gases. State effect of molecular mass and temperature on rate of diffusion. Atomic structure: protons, neutrons, electrons; proton number and nucleon number; isotopes; deduce subatomic particles in atoms and ions.",
+      "matchKeywords": ["particulate", "particle", "kinetic", "diffusion", "atomic", "isotope", "粒子", "原子"]
+    },
+    {
+      "id": "6092-bonding",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "3. Chemical Bonding and Structure",
+      "content": "Ionic bonding: electron transfer, dot-and-cross diagrams, giant ionic lattice, properties from lattice. Covalent bonding: shared pairs, simple molecules, properties from structure. Metallic bonding: positive ions in sea of electrons. Compare structures of diamond, graphite, silicon(IV) oxide, ionic and simple molecular substances to deduce properties.",
+      "matchKeywords": ["bonding", "ionic", "covalent", "metallic", "lattice", "structure", "化学键", "离子", "共价"]
+    },
+    {
+      "id": "6092-calculations",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "4. Chemical Calculations",
+      "content": "Write formulae and balanced equations including ionic equations. Mole concept: amount of substance, molar mass, Avogadro constant. Calculate reacting masses, volumes of gases at rtp, concentrations in mol/dm³. Titration calculations using n = cV. Empirical and molecular formulae from composition data.",
+      "matchKeywords": ["mole", "stoichiometry", "titration", "concentration", "equation", "摩尔", "浓度", "滴定"]
+    },
+    {
+      "id": "6092-acid-base",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "5. Acid-Base Chemistry",
+      "content": "Acids produce hydrogen ions in aqueous solution; alkalis produce hydroxide ions. Neutralisation forms salt and water. pH scale 0–14; universal indicator colours. Strong vs weak acids (degree of ionisation). Preparation of soluble salts by titration or excess solid; insoluble salts by precipitation.",
+      "matchKeywords": ["acid", "base", "alkali", "neutralisation", "salt", "ph", "酸", "碱", "中和"]
+    },
+    {
+      "id": "6092-qualitative",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "6. Qualitative Analysis",
+      "content": "Tests for anions: carbonate, chloride, iodide, nitrate, sulfate using specified reagents. Tests for cations: aluminium, ammonium, calcium, copper(II), iron(II), iron(III), zinc using aqueous sodium hydroxide and ammonia. Flame tests for Li, Na, K, Ca. Identify gases: ammonia, CO₂, chlorine, hydrogen, oxygen, SO₂.",
+      "matchKeywords": ["qualitative", "analysis", "test", "anion", "cation", "flame", "定性", "检验"]
+    },
+    {
+      "id": "6092-redox",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "7. Redox Chemistry",
+      "content": "Oxidation is loss of electrons; reduction is gain of electrons (OIL RIG). Identify redox reactions by changes in oxidation state. Electrolysis of molten and aqueous compounds; products at electrodes. Electrochemical cells: simple cell voltage from reactivity series. Reactivity series and displacement reactions.",
+      "matchKeywords": ["redox", "oxidation", "reduction", "electrolysis", "electrochemical", "氧化", "还原", "电解"]
+    },
+    {
+      "id": "6092-periodic",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "8. Patterns in the Periodic Table",
+      "content": "Trends in Groups I, VII and noble gases. Group I: increasing reactivity down group, reaction with water. Group VII: halogen displacement, reactivity decreases down group. Transition elements: coloured compounds, catalytic behaviour. Period 3 oxides and hydroxides — acid/base character across period.",
+      "matchKeywords": ["periodic", "group", "halogen", "alkali", "metal", "周期表", "族"]
+    },
+    {
+      "id": "6092-energetics-rate",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "9–10. Energetics and Rate of Reactions",
+      "content": "Exothermic and endothermic reactions; enthalpy change ΔH; energy profile diagrams with activation energy. Collision theory: frequency, orientation, energy. Factors affecting rate: temperature, concentration, pressure, surface area, catalyst. Interpret rate graphs and experimental methods for measuring rate.",
+      "matchKeywords": ["energetics", "enthalpy", "exothermic", "endothermic", "rate", "catalyst", "activation", "反应速率", "能量"]
+    },
+    {
+      "id": "6092-organic",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "11. Organic Chemistry",
+      "content": "Homologous series: alkanes, alkenes, alcohols, carboxylic acids, esters. General formulae and functional groups. Combustion, addition reactions of alkenes, fermentation to ethanol, esterification. Polymers: addition polymerisation; structure of repeat unit. Naming and drawing structural formulae.",
+      "matchKeywords": ["organic", "alkane", "alkene", "alcohol", "ester", "polymer", "有机", "烷", "烯"]
+    },
+    {
+      "id": "6092-air-quality",
+      "subject": "Chemistry",
+      "syllabusCode": "6092",
+      "sourceFile": "syllabus/secondary/2023 OLevel Chemistry Syllabus Updated 2024.pdf",
+      "title": "12. Maintaining Air Quality",
+      "content": "Composition of clean dry air. Pollutants: CO, SO₂, NOₓ, particulates; sources and effects. Acid rain formation and prevention. Greenhouse effect and climate change link to CO₂ and other gases. Catalytic converters; flue gas desulfurisation. Singapore context for air quality management.",
+      "matchKeywords": ["air", "quality", "pollution", "acid rain", "greenhouse", "atmosphere", "空气", "污染"]
+    },
+    {
+      "id": "6091-overview",
+      "subject": "Physics",
+      "syllabusCode": "6091",
+      "sourceFile": "syllabus/secondary/2023 OLevel Physics Syllabus Updated 2024.pdf",
+      "title": "Upper Secondary Physics — content sections",
+      "content": "MOE Express Physics sections: Measurements; Newtonian Mechanics; Thermal Physics; Waves; Electricity and Magnetism; Radioactivity. Students develop inquiry practices, use models, relate physics to society and environment. Assessment includes practical work and data-based questions.",
+      "matchKeywords": ["physics", "6091", "syllabus", "sections", "物理"]
+    },
+    {
+      "id": "6091-measurement",
+      "subject": "Physics",
+      "syllabusCode": "6091",
+      "sourceFile": "syllabus/secondary/2023 OLevel Physics Syllabus Updated 2024.pdf",
+      "title": "Measurements",
+      "content": "Physical quantities, SI units, prefixes. Measurement of length, time, mass using appropriate instruments. Precision, accuracy, parallax error. Scalars and vectors. Plot and interpret graphs including gradient and area under graph for physical meaning.",
+      "matchKeywords": ["measurement", "units", "scalar", "vector", "graph", "测量", "单位"]
+    },
+    {
+      "id": "6091-mechanics",
+      "subject": "Physics",
+      "syllabusCode": "6091",
+      "sourceFile": "syllabus/secondary/2023 OLevel Physics Syllabus Updated 2024.pdf",
+      "title": "Newtonian Mechanics",
+      "content": "Kinematics: speed, velocity, acceleration, equations of motion, graphs. Dynamics: Newton's laws, free-body diagrams, friction. Mass, weight, density. Turning effect of forces: moment, centre of gravity, stability. Pressure in solids, liquids and gases; hydraulic systems. Energy, work, power; kinetic and gravitational potential energy; conservation of energy.",
+      "matchKeywords": ["kinematics", "dynamics", "newton", "force", "pressure", "energy", "运动", "力", "牛顿"]
+    },
+    {
+      "id": "6091-thermal",
+      "subject": "Physics",
+      "syllabusCode": "6091",
+      "sourceFile": "syllabus/secondary/2023 OLevel Physics Syllabus Updated 2024.pdf",
+      "title": "Thermal Physics",
+      "content": "Kinetic model of matter; Brownian motion evidence. Temperature and thermal equilibrium. Heat capacity Q = mcΔT; latent heat Q = mL. Conduction, convection, radiation. Practical applications: cooling, insulation, sea breeze. Changes of state on heating/cooling curves.",
+      "matchKeywords": ["thermal", "heat", "temperature", "latent", "capacity", "conduction", "热", "温度", "比热"]
+    },
+    {
+      "id": "6091-waves",
+      "subject": "Physics",
+      "syllabusCode": "6091",
+      "sourceFile": "syllabus/secondary/2023 OLevel Physics Syllabus Updated 2024.pdf",
+      "title": "Waves",
+      "content": "Wave properties: amplitude, wavelength, frequency, period, speed v = fλ. Transverse and longitudinal waves; sound. Light: reflection, refraction, thin lens ray diagrams. Electromagnetic spectrum — order, properties, applications and safety. Sound: pitch, loudness, ultrasound uses.",
+      "matchKeywords": ["wave", "light", "sound", "reflection", "refraction", "spectrum", "波", "光", "声"]
+    },
+    {
+      "id": "6091-electricity",
+      "subject": "Physics",
+      "syllabusCode": "6091",
+      "sourceFile": "syllabus/secondary/2023 OLevel Physics Syllabus Updated 2024.pdf",
+      "title": "Electricity and Magnetism",
+      "content": "Static electricity: charging, electric field, applications and hazards. Current, emf, potential difference; Ohm's law V = IR; I–V graphs for ohmic and non-ohmic conductors. Series and parallel circuits; combined resistance. Practical electricity: power P = IV, energy E = Pt, fuse and safety. Magnetism, electromagnetism, motor and generator principles, electromagnetic induction.",
+      "matchKeywords": ["electricity", "circuit", "current", "resistance", "ohm", "magnet", "电磁", "电路", "电流"]
+    },
+    {
+      "id": "6091-radioactivity",
+      "subject": "Physics",
+      "syllabusCode": "6091",
+      "sourceFile": "syllabus/secondary/2023 OLevel Physics Syllabus Updated 2024.pdf",
+      "title": "Radioactivity",
+      "content": "Background radiation. Types of radiation α, β, γ — nature, penetration, ionising power. Nuclear equations and half-life. Uses and hazards of radioactivity; safe handling and disposal. Medical and industrial applications; carbon dating overview.",
+      "matchKeywords": ["radioactivity", "radiation", "half-life", "nuclear", "放射性", "半衰期"]
+    },
+    {
+      "id": "pri-sci-overview",
+      "subject": "Science",
+      "syllabusCode": "P3-P6",
+      "sourceFile": "syllabus/primary/Primary Science Syllabus 2023_May24.pdf",
+      "title": "Primary Science — themes",
+      "content": "Primary Science themes: Diversity; Cycles; Systems; Interactions; Energy. Students observe, compare, classify; develop basic inquiry skills. Topics include plants, animals, human body, materials, forces, light, heat, electricity at appropriate primary levels.",
+      "matchKeywords": ["primary", "science", "diversity", "cycles", "systems", "小学", "科学"]
+    },
+    {
+      "id": "lower-sec-sci",
+      "subject": "Science",
+      "syllabusCode": "S1-S2",
+      "sourceFile": "syllabus/secondary/2021 Science Lower Secondary ExpressNormalAcademic Syllabus.pdf",
+      "title": "Lower Secondary Science",
+      "content": "Lower secondary integrated science builds foundations in scientific inquiry, measurement, and core ideas across biology, chemistry and physics before specialisation. Topics include cells, solutions, forces, energy forms, and matter, with emphasis on practical skills and ethics.",
+      "matchKeywords": ["lower", "secondary", "integrated", "science", "sec 1", "sec 2", "中学", "科学"]
+    }
+  ]
+}

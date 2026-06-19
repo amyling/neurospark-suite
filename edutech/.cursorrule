@@ -1,0 +1,25 @@
+# EduTech — EduLens AI
+
+This workspace hosts **EduLens AI**, a structured education product (not a generic chatbot).
+
+## Product modules
+
+- Homework Analyzer (`/edulens/homework-analyzer`)
+- Lesson Generator (`/edulens/lesson-generator`)
+- Mistake Book (`/edulens/mistake-book`)
+- Dashboard (`/edulens/dashboard`)
+- Reports (`/edulens/reports/[id]`)
+
+## Architecture rules
+
+- UI must not call LLMs directly — use API routes under `src/app/api/edulens/`
+- Business logic lives in `src/lib/edulens/services/edulens-service.ts`
+- AI: provider → prompt builder → JSON parser → Zod validator
+- Default mode: `EDULENS_AI_MODE=mock` with seeded demo data
+
+## Code conventions
+
+- Code comments and UI strings: English (unless lesson content requires Chinese)
+- User-facing answers: match the user's language
+- JSDoc for non-obvious functions
+- Minimal diffs; reuse existing components under `src/components/edulens/`

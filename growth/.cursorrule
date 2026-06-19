@@ -1,0 +1,66 @@
+# Project Rule: YouthMentor AI
+
+## Product
+
+YouthMentor AI is a safe digital mentor for student wellbeing in the `growth` workspace.
+
+- Reflective support, mood check-in, encouragement, crisis guardrails
+- Growth character chat: scenario-based celebrity / religious-leader-style AI simulations + custom virtual personas
+- Retention: memory, intimacy, coaching packs, reflection debrief bridge, freemium limits
+- NOT therapy, diagnosis, or claims to speak officially for any real person or faith
+
+## Routes
+
+All features live under `/youthmentor/*` in `src/app/youthmentor/`.
+
+Character growth features: `/youthmentor/characters`, `/characters/chat`, `/characters/insights`, `/settings`.
+
+## Flow
+
+Mood check-in → stress source → mentor persona → structured reflection (6 prompts) → safety pipeline → mentor response OR crisis panel → action plan → safety page → save to local history.
+
+Optional bridge: reflection → character mentor debrief (`?debrief=1` on chat page).
+
+Structured reflection flow remains primary; open character chat lives under `/youthmentor/characters/*`.
+
+## Code layout
+
+- `src/types/youthmentor.ts` — shared types
+- `src/types/character-growth.ts` — memory, intimacy, coaching packs, settings
+- `src/lib/youthmentor/` — risk, mentor, action-plan, storage, demo seed
+- `src/lib/character-chat/` — presets, knowledge base, chat engine, growth storage, scenarios, coaching packs
+- `src/lib/character-chat/knowledge/` — per-persona teachings, RAG-lite chunk retrieval
+- `src/lib/ai/` — LLM provider (shared `EDULENS_*` env with EduTech)
+- `src/context/CharacterChatContext.tsx` — character chat session + growth hooks
+- `src/context/GrowthSettingsContext.tsx` — freemium, parent mode
+- `src/context/YouthMentorContext.tsx` — session state
+- `src/components/youthmentor/` — UI components
+- `src/components/character-chat/` — character UI (scenarios, intimacy, coaching packs)
+- `src/app/api/youthmentor/process/route.ts` — server pipeline
+- `src/app/api/character-chat/route.ts` — character chat
+- `src/app/api/character-memory/route.ts` — LLM memory summarization
+
+## Safety
+
+High-risk input must show crisis message and help links only — no normal coaching.
+
+Never diagnose or tell users to keep secrets. Character chat must label replies as AI simulation, not the real person.
+
+## Conventions
+
+- UI strings and README may be English; course content may use Chinese where required
+- Code comments: JSDoc
+- Minimal diffs; reuse existing components
+- No new resource files unless necessary (this project uses Tailwind, no image assets required)
+
+## Commands (Windows)
+
+Run commands separately; do not chain with `&&`.
+
+Dev server: **port 3007** — http://localhost:3007/youthmentor (EduTech sibling uses 3006).
+
+```bash
+npm install
+npm run dev
+npm run build
+```
