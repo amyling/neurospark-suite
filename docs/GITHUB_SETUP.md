@@ -1,4 +1,6 @@
-# GitHub Setup — Publish NeuroSpark Suite
+# GitHub Setup — leo-suite
+
+Repository: **https://github.com/mentorkokkwa/leo-suite**
 
 ## Recommended: public repo, private secrets
 
@@ -23,7 +25,7 @@ Verify `.env.local` is **not** staged.
 ## Step 2 — Create GitHub repository
 
 1. GitHub → **New repository**  
-2. Name: `neurospark-suite` (or your choice)  
+2. Name: `leo-suite`  
 3. Public  
 4. Do **not** add README (you already have one)
 
@@ -31,7 +33,7 @@ Verify `.env.local` is **not** staged.
 
 ```bash
 git branch -M main
-git remote add origin https://github.com/mentorkokkwa/neurospark-suite.git
+git remote add origin https://github.com/mentorkokkwa/leo-suite.git
 git push -u origin main
 ```
 
@@ -50,9 +52,9 @@ git push -u origin main
 Add live demo links after Vercel deploy:
 
 ```markdown
-- [YouthMentor Live](https://neurospark-suite-growth.vercel.app/youthmentor) *(update after Vercel deploy)*
-- [EduLens Live](https://neurospark-suite-edutech.vercel.app/edulens)
-- [CampusBot Live](https://neurospark-suite-robot.vercel.app/campusbot)
+- [YouthMentor Live](https://leo-suite-growth.vercel.app/youthmentor)
+- [EduLens Live](https://leo-suite-edutech.vercel.app/edulens)
+- [CampusBot Live](https://leo-suite-robot.vercel.app/campusbot)
 ```
 
 ## Sharing your work

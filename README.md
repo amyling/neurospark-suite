@@ -1,8 +1,17 @@
 # NeuroSpark Suite
 
-**Liu Cenzhi** · [github.com/mentorkokkwa](https://github.com/mentorkokkwa) · [Repository](https://github.com/amyling/neurospark-suite)
+**Liu Cenzhi** · [github.com/mentorkokkwa](https://github.com/mentorkokkwa) · [leo-suite](https://github.com/mentorkokkwa/leo-suite)
 
 Three connected prototypes I built out of interest in **AI engineering**, **product design**, and **commercial thinking** — focused on how students **learn**, **grow**, and how schools could **serve** with campus robotics.
+
+## Live demos (Vercel)
+
+| App | URL |
+|-----|-----|
+| YouthMentor | https://leo-suite-growth.vercel.app/youthmentor |
+| Safety walkthrough | https://leo-suite-growth.vercel.app/youthmentor/safety-demo |
+| EduLens | https://leo-suite-edutech.vercel.app/edulens |
+| CampusBot | https://leo-suite-robot.vercel.app/campusbot |
 
 | Project | Folder | Dev URL | Deploy path |
 |---------|--------|---------|-------------|
