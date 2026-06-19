@@ -1,4 +1,4 @@
-# NeuroSpark Suite (meta)
+# Leo Suite (meta)
 
 **Liu Cenzhi** · [github.com/mentorkokkwa](https://github.com/mentorkokkwa)
 
