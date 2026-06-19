@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuroSpark Suite — DSA Portfolio</title>
+  <style>
+    @page { size: A4; margin: 14mm; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.45;
+      color: #1e293b;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 12mm;
+    }
+    h1 { font-size: 18pt; margin: 0 0 4px; color: #0f172a; }
+    .subtitle { color: #64748b; font-size: 10pt; margin-bottom: 12px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 16px; font-size: 9.5pt; margin-bottom: 14px; }
+    .meta span { background: #f1f5f9; padding: 4px 10px; border-radius: 6px; }
+    h2 { font-size: 11pt; margin: 14px 0 6px; color: #0369a1; border-bottom: 2px solid #e0f2fe; padding-bottom: 3px; }
+    .pitch { background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 10px 12px; margin: 10px 0; font-size: 10pt; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 8px 0; }
+    .card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; }
+    .card h3 { margin: 0 0 6px; font-size: 10pt; color: #7c3aed; }
+    .card ul { margin: 0; padding-left: 16px; font-size: 9pt; }
+    table { width: 100%; border-collapse: collapse; font-size: 9pt; margin: 6px 0; }
+    th, td { border: 1px solid #e2e8f0; padding: 5px 8px; text-align: left; }
+    th { background: #f8fafc; }
+    .highlight { background: #fff1f2; border: 1px solid #fecdd3; border-radius: 8px; padding: 10px; margin: 10px 0; font-size: 9.5pt; }
+    .footer { margin-top: 14px; font-size: 8.5pt; color: #94a3b8; text-align: center; }
+    @media print {
+      body { padding: 0; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <p class="no-print" style="background:#fef3c7;padding:8px;border-radius:6px;font-size:9pt;">
+    Print tip: Chrome → Ctrl+P → Save as PDF. Fill in [brackets] before printing.
+  </p>
+
+  <h1>NeuroSpark Suite</h1>
+  <p class="subtitle">DSA Computing Portfolio · Learn · Grow · Serve</p>
+
+  <div class="meta">
+    <span><strong>Name:</strong> [Your name]</span>
+    <span><strong>Level:</strong> Secondary 4</span>
+    <span><strong>GitHub:</strong> [github.com/you/neurospark-suite]</span>
+    <span><strong>Live demo:</strong> [your-app.vercel.app/youthmentor]</span>
+  </div>
+
+  <div class="pitch">
+    I built three connected TypeScript / Next.js apps for Singapore students:
+    <strong>EduLens</strong> (AI homework feedback),
+    <strong>YouthMentor</strong> (wellbeing + crisis guardrails),
+    and <strong>CampusBot</strong> (A* school robot simulator).
+  </div>
+
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>EduLens AI</h3>
+      <ul>
+        <li>Homework analyzer &amp; mistake book</li>
+        <li>Lesson generator + PDF reports</li>
+        <li>Multi-provider LLM + OCR</li>
+      </ul>
+    </div>
+    <div class="card" style="border-color:#fecdd3;">
+      <h3 style="color:#e11d48;">YouthMentor AI ★</h3>
+      <ul>
+        <li>Mood → 6-step reflection → action plan</li>
+        <li>Safety: keyword + classifier → crisis only</li>
+        <li>Character chat, RAG, freemium</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>CampusBot AI</h3>
+      <ul>
+        <li>School map simulator</li>
+        <li>A* pathfinding + re-plan</li>
+        <li>Task metrics report</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <strong>DSA demo path:</strong> /youthmentor/safety-demo → Run safety demo → Get mentor response → Crisis panel only (no coaching LLM).
+  </div>
+
+  <h2>Technical skills</h2>
+  <table>
+    <tr><th>Area</th><th>Evidence</th></tr>
+    <tr><td>Full-stack</td><td>Next.js 16, React 19, TypeScript, Tailwind 4</td></tr>
+    <tr><td>AI engineering</td><td>Provider chain, RAG-lite, structured JSON, mock fallback</td></tr>
+    <tr><td>Algorithms</td><td>A* navigation, dynamic obstacle handling</td></tr>
+    <tr><td>Safety &amp; ethics</td><td>Layered crisis pipeline; local-first data; clear disclaimers</td></tr>
+  </table>
+
+  <h2>Product &amp; business</h2>
+  <table>
+    <tr><th>Model</th><th>Detail</th></tr>
+    <tr><td>Freemium</td><td>20 msgs/day free; premium coaching packs</td></tr>
+    <tr><td>School B2B</td><td>Anonymous insights — no chat transcripts (PDPA-minded)</td></tr>
+    <tr><td>User research</td><td>5-peer survey: avg stress 4.2/5; 60% would try private app</td></tr>
+  </table>
+
+  <h2>What I learned</h2>
+  <ul style="font-size:9.5pt;margin:6px 0;">
+    <li>Safety cannot be delegated to the LLM alone in youth products.</li>
+    <li>Mock fallbacks make demos reliable without API keys (interviews, Vercel free tier).</li>
+    <li>Three focused apps tell a clearer story than one bloated application.</li>
+  </ul>
+
+  <p class="footer">
+    MIT License · Not therapy or emergency care · Character replies are AI simulations · NeuroSpark Suite 2026
+  </p>
+</body>
+</html>
