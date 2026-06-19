@@ -40,3 +40,8 @@ next-env.d.ts
 .idea/
 .vscode/
 *.swp
+
+# Standalone app repos (see leo-suite-growth / -edutech / -robot on GitHub)
+/growth/
+/edutech/
+/robot/

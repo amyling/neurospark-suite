@@ -1,2 +1,0 @@
-agnes-2.0-flash	200	{"id":"chatcmpl-9747555e201ced6a","created":1781515008,"model":"agnes-2.0-flash","object":"chat.completion","system_fingerprint":"vllm-0.21.0-tp2-2c2746c1","choices":[{"finish_reason":"stop","index":0,"message":{"content
-agnes-2.0-pro	503	{"error":{"code":"model_not_found","message":"No available channel for model agnes-2.0-pro under group default (distributor) (request id: 2026061509170170951782n7rYBRZD)","type":"AgnesAI_error"}}
