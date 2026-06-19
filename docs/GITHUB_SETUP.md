@@ -39,7 +39,7 @@ git push -u origin main
 
 ## Step 4 — Repository settings
 
-- **About:** short description + link to live demos  
+- **About:** short description + [Vercel dashboard](https://vercel.com/cenzhi)  
 - **Topics:** `nextjs`, `typescript`, `ai`, `education`, `wellbeing`, `robotics`  
 - **License:** MIT (already in repo)
 
@@ -49,12 +49,13 @@ git push -u origin main
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ```
 
-Add live demo links after Vercel deploy:
+Live demos — copy Production URL from [vercel.com/cenzhi](https://vercel.com/cenzhi) for each project:
 
 ```markdown
-- [YouthMentor Live](https://leo-suite-growth.vercel.app/youthmentor)
-- [EduLens Live](https://leo-suite-edutech.vercel.app/edulens)
-- [CampusBot Live](https://leo-suite-robot.vercel.app/campusbot)
+- [Vercel Dashboard](https://vercel.com/cenzhi)
+- YouthMentor: `{growth-domain}/youthmentor`
+- EduLens: `{edutech-domain}/edulens`
+- CampusBot: `{robot-domain}/campusbot`
 ```
 
 ## Sharing your work

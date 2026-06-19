@@ -6,7 +6,7 @@
 
 - **Name:** Liu Cenzhi
 - **Focus:** AI · full-stack · product · commercialization
-- **Links:** [github.com/mentorkokkwa](https://github.com/mentorkokkwa) · [leo-suite](https://github.com/mentorkokkwa/leo-suite)
+- **Links:** [github.com/mentorkokkwa](https://github.com/mentorkokkwa) · [leo-suite](https://github.com/mentorkokkwa/leo-suite) · [vercel.com/cenzhi](https://vercel.com/cenzhi)
 
 ## Elevator pitch
 

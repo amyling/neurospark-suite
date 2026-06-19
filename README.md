@@ -6,12 +6,18 @@ Three connected prototypes I built out of interest in **AI engineering**, **prod
 
 ## Live demos (Vercel)
 
-| App | URL |
-|-----|-----|
-| YouthMentor | https://leo-suite-growth.vercel.app/youthmentor |
-| Safety walkthrough | https://leo-suite-growth.vercel.app/youthmentor/safety-demo |
-| EduLens | https://leo-suite-edutech.vercel.app/edulens |
-| CampusBot | https://leo-suite-robot.vercel.app/campusbot |
+**Dashboard:** [vercel.com/cenzhi](https://vercel.com/cenzhi) · Repo: [mentorkokkwa/leo-suite](https://github.com/mentorkokkwa/leo-suite)
+
+Three projects from `leo-suite` (root: `growth` / `edutech` / `robot`). Copy each project's **Production URL** from the dashboard, then append:
+
+| App | Root | Path |
+|-----|------|------|
+| YouthMentor | `growth` | `/youthmentor` |
+| Safety walkthrough | `growth` | `/youthmentor/safety-demo` |
+| EduLens | `edutech` | `/edulens` |
+| CampusBot | `robot` | `/campusbot` |
+
+Set `EDULENS_AI_MODE=mock` on `growth` and `edutech` for reliable demos without API keys.
 
 | Project | Folder | Dev URL | Deploy path |
 |---------|--------|---------|-------------|

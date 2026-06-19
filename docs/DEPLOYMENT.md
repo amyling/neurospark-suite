@@ -4,8 +4,8 @@ Deploy each app as a **separate Vercel project** (one repo, three roots).
 
 ## Prerequisites
 
-- GitHub repo: [github.com/mentorkokkwa/leo-suite](https://github.com/mentorkokkwa/leo-suite)
-- [Vercel](https://vercel.com) account (free Hobby tier is enough)
+- GitHub: [github.com/mentorkokkwa/leo-suite](https://github.com/mentorkokkwa/leo-suite)
+- Vercel: [vercel.com/cenzhi](https://vercel.com/cenzhi) (connected to the same GitHub account)
 - Singapore users: Vercel CDN includes SG edge — static pages load fast
 
 ## 1. YouthMentor (growth)
@@ -31,8 +31,8 @@ GEMINI_API_KEY=your_key
 GROQ_API_KEY=your_key
 ```
 
-**Live URL:** `https://leo-suite-growth.vercel.app/youthmentor`  
-**Safety walkthrough:** `https://leo-suite-growth.vercel.app/youthmentor/safety-demo`
+**Production URL:** open [vercel.com/cenzhi](https://vercel.com/cenzhi) → **growth** project → copy domain, then add `/youthmentor`  
+**Safety walkthrough:** same domain + `/youthmentor/safety-demo`
 
 ### Cold start note
 
@@ -48,7 +48,7 @@ First API call after idle may add 1–3 s. LLM calls add 2–10 s. For stable de
 EDULENS_AI_MODE=mock
 ```
 
-Live: `https://leo-suite-edutech.vercel.app/edulens`
+Live: [vercel.com/cenzhi](https://vercel.com/cenzhi) → **edutech** project → `/edulens`
 
 ## 3. CampusBot (robot)
 
@@ -58,12 +58,12 @@ Live: `https://leo-suite-edutech.vercel.app/edulens`
 
 No API keys required — fully client-side simulation.
 
-Live: `https://leo-suite-robot.vercel.app/campusbot`
+Live: [vercel.com/cenzhi](https://vercel.com/cenzhi) → **robot** project → `/campusbot`
 
 ## Deploy steps (each project)
 
 1. Push code to GitHub.  
-2. Vercel → **Add New Project** → Import `mentorkokkwa/leo-suite`.  
+2. Vercel → [vercel.com/cenzhi](https://vercel.com/cenzhi) → **Add New** → Import `mentorkokkwa/leo-suite`.  
 3. Set **Root Directory** to `growth`, `edutech`, or `robot`.  
 4. Add env vars → Deploy.  
 5. Smoke-test safety walkthrough and one normal demo case.
