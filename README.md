@@ -8,16 +8,14 @@ Three connected prototypes I built out of interest in **AI engineering**, **prod
 
 **Dashboard:** [vercel.com/cenzhi](https://vercel.com/cenzhi) · Repo: [mentorkokkwa/leo-suite](https://github.com/mentorkokkwa/leo-suite)
 
-Three projects from `leo-suite` (root: `growth` / `edutech` / `robot`). Copy each project's **Production URL** from the dashboard, then append:
+> **Not deployed yet?** Follow **[docs/VERCEL_FIRST_DEPLOY.md](docs/VERCEL_FIRST_DEPLOY.md)** — import the same repo 3 times with roots `growth`, `edutech`, `robot`.
 
-| App | Root | Path |
-|-----|------|------|
-| YouthMentor | `growth` | `/youthmentor` |
-| Safety walkthrough | `growth` | `/youthmentor/safety-demo` |
-| EduLens | `edutech` | `/edulens` |
-| CampusBot | `robot` | `/campusbot` |
-
-Set `EDULENS_AI_MODE=mock` on `growth` and `edutech` for reliable demos without API keys.
+| App | Root | Path | Env (Vercel) |
+|-----|------|------|----------------|
+| YouthMentor | `growth` | `/youthmentor` | `EDULENS_AI_MODE=mock` |
+| Safety walkthrough | `growth` | `/youthmentor/safety-demo` | same |
+| EduLens | `edutech` | `/edulens` | `EDULENS_AI_MODE=mock` |
+| CampusBot | `robot` | `/campusbot` | none |
 
 | Project | Folder | Dev URL | Deploy path |
 |---------|--------|---------|-------------|
@@ -66,7 +64,8 @@ Copy `edutech/.env.local.example` → `.env.local` for AI keys. Growth shares th
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | System architecture diagrams |
 | [docs/PRICING.md](docs/PRICING.md) | Freemium / school pricing model |
 | [docs/USER_SURVEY.md](docs/USER_SURVEY.md) | User research template + sample results |
-| [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Vercel deployment guide |
+| [docs/VERCEL_FIRST_DEPLOY.md](docs/VERCEL_FIRST_DEPLOY.md) | **First-time Vercel setup** (3 projects from one repo) |
+| [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Vercel deployment reference |
 | [docs/GITHUB_SETUP.md](docs/GITHUB_SETUP.md) | Publish to GitHub safely |
 
 ## Safety demo (YouthMentor)
