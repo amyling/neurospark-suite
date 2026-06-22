@@ -1,96 +1,123 @@
-# Vercel Deployment Guide
+# Vercel Deployment Guide — Leo Suite
 
-Deploy each app as a **separate Vercel project** (one repo, three roots).
+Deploy each app as a **separate Vercel project** (one repo per app).
 
-## Prerequisites
+**Dashboard:** [vercel.com/cenzhi](https://vercel.com/cenzhi)
 
-- GitHub: [github.com/mentorkokkwa/leo-suite](https://github.com/mentorkokkwa/leo-suite)
-- Vercel: [vercel.com/cenzhi](https://vercel.com/cenzhi) (connected to the same GitHub account)
-- Singapore users: Vercel CDN includes SG edge — static pages load fast
+## Repository strategy
+
+| App | Private deploy repo | Public showcase |
+|-----|---------------------|-----------------|
+| YouthMentor | [leo-suite-growth](https://github.com/mentorkokkwa/leo-suite-growth) | [leo-suite-growth-showcase](https://github.com/mentorkokkwa/leo-suite-growth-showcase) |
+| EduLens | [leo-suite-edutech](https://github.com/mentorkokkwa/leo-suite-edutech) | [leo-suite-edutech-showcase](https://github.com/mentorkokkwa/leo-suite-edutech-showcase) |
+| CampusBot | [leo-suite-robot](https://github.com/mentorkokkwa/leo-suite-robot) | same (public OK) |
+
+Full setup: **[PRIVATE_PUBLIC_REPOS.md](PRIVATE_PUBLIC_REPOS.md)** · Cursor/Codex rule: **[DEPLOYMENT_CURSOR_CODEX.md](DEPLOYMENT_CURSOR_CODEX.md)**
+
+---
 
 ## 1. YouthMentor (growth)
 
 | Setting | Value |
 |---------|-------|
-| Root Directory | `growth` |
+| GitHub repo | `mentorkokkwa/leo-suite-growth` (Private) |
+| Root Directory | `.` (empty) |
 | Framework | Next.js |
 | Build Command | `npm run build` |
-| Output | default |
+| Production branch | `main` |
 
-**Environment variables (Vercel Dashboard → Settings → Environment Variables):**
+**Demo-safe env vars (recommended for school review):**
 
 ```bash
 EDULENS_AI_MODE=mock
+EDULENS_DEV_PROFILE=mock
+EDULENS_SKIP_OLLAMA=true
+NEXT_PUBLIC_DEMO_MODE=true
 ```
 
-For real AI replies (optional):
+**Production URL:** https://leo-suite-growth-swart.vercel.app/youthmentor  
+**Safety walkthrough:** https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo
 
-```bash
-EDULENS_AI_MODE=auto
-GEMINI_API_KEY=your_key
-GROQ_API_KEY=your_key
-```
-
-**Production URL:** open [vercel.com/cenzhi](https://vercel.com/cenzhi) → **growth** project → copy domain, then add `/youthmentor`  
-**Safety walkthrough:** same domain + `/youthmentor/safety-demo`
-
-### Cold start note
-
-First API call after idle may add 1–3 s. LLM calls add 2–10 s. For stable demos, use **mock mode** or local `localhost`.
+---
 
 ## 2. EduLens (edutech)
 
 | Setting | Value |
 |---------|-------|
-| Root Directory | `edutech` |
+| GitHub repo | `mentorkokkwa/leo-suite-edutech` (Private) |
+| Root Directory | `.` (empty) |
 
 ```bash
 EDULENS_AI_MODE=mock
+EDULENS_DEV_PROFILE=mock
+EDULENS_SKIP_OLLAMA=true
+EDULENS_RAG_WEB_ENABLED=false
+NEXT_PUBLIC_DEMO_MODE=true
 ```
 
-Live: [vercel.com/cenzhi](https://vercel.com/cenzhi) → **edutech** project → `/edulens`
+Live: https://leo-suite-edutech-six.vercel.app/edulens
+
+---
 
 ## 3. CampusBot (robot)
 
 | Setting | Value |
 |---------|-------|
-| Root Directory | `robot` |
+| GitHub repo | `mentorkokkwa/leo-suite-robot` (Public) |
+| Root Directory | `.` (empty) |
 
 No API keys required — fully client-side simulation.
 
-Live: [vercel.com/cenzhi](https://vercel.com/cenzhi) → **robot** project → `/campusbot`
+Live: https://leo-suite-robot.vercel.app/campusbot · [/simulator](https://leo-suite-robot.vercel.app/campusbot/simulator)
+
+---
 
 ## Deploy steps (each project)
 
-1. Push code to GitHub.  
-2. Vercel → [vercel.com/cenzhi](https://vercel.com/cenzhi) → **Add New** → Import `mentorkokkwa/leo-suite`.  
-3. Set **Root Directory** to `growth`, `edutech`, or `robot`.  
-4. Add env vars → Deploy.  
-5. Smoke-test safety walkthrough and one normal demo case.
+1. Push code to **private** GitHub repo (growth / edutech).  
+2. Vercel → **Add New** → Import private repo.  
+3. Root Directory: **empty**. Framework: Next.js.  
+4. Add env vars (mock mode first) → Deploy.  
+5. Smoke-test demo flows and safety walkthrough.  
+6. Push public showcase repo from `showcase/leo-suite-*-showcase/`.
+
+---
 
 ## Demo reliability
 
 | Priority | Method |
 |----------|--------|
-| 1 | Local `npm run dev` on laptop |
-| 2 | Vercel with `EDULENS_AI_MODE=mock` |
+| 1 | Vercel with `EDULENS_AI_MODE=mock` |
+| 2 | Local `npm run dev` on laptop |
 | 3 | Pre-recorded walkthrough video |
 
-## Custom domains (optional)
+---
 
-Vercel free tier supports `*.vercel.app`. Custom domain (e.g. `your-domain.com`) is optional.
+## Build validation (before push)
+
+```powershell
+npm install
+npm run lint
+npm run typecheck
+npm run build
+```
+
+---
 
 ## Troubleshooting
 
 | Issue | Fix |
 |-------|-----|
-| Build fails | Run `npm run build` locally in that folder first |
-| API 500 | Check env vars; fall back to `mock` |
-| Slow first load | Normal for serverless cold start; warm up once before a live demo |
-| 404 on routes | Ensure Next.js app router; no `output: 'export'` |
+| Build fails | Run `npm run build` locally first |
+| API 500 | Set `EDULENS_AI_MODE=mock`; redeploy |
+| Private repo not visible in Vercel | GitHub app → grant access to private repos |
+| Slow first load | Serverless cold start; warm up before live demo |
+| 404 on routes | No `output: 'export'` in next.config |
+
+---
 
 ## Security
 
 - Never commit `.env.local`  
-- Set API keys only in Vercel dashboard, not in git  
-- Rotate keys if accidentally exposed
+- API keys only in Vercel dashboard  
+- Private repos for full source; public showcase for portfolio docs only
