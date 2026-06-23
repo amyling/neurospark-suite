@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leo Suite — One-Page Portfolio Summary</title>
+  <style>
+    @page { size: A4; margin: 12mm; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-size: 9.5pt;
+      line-height: 1.42;
+      color: #1e293b;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 10mm;
+    }
+    h1 { font-size: 17pt; margin: 0 0 2px; color: #0f172a; }
+    .tagline { color: #64748b; font-size: 9.5pt; margin-bottom: 10px; }
+    .badge {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4338ca;
+      font-size: 8pt;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; font-size: 8.5pt; margin-bottom: 10px; }
+    .meta span { background: #f8fafc; border: 1px solid #e2e8f0; padding: 3px 8px; border-radius: 4px; }
+    h2 {
+      font-size: 10pt;
+      color: #0369a1;
+      margin: 10px 0 4px;
+      border-bottom: 1.5px solid #e0f2fe;
+      padding-bottom: 2px;
+    }
+    .pitch {
+      background: #f0f9ff;
+      border-left: 3px solid #0ea5e9;
+      padding: 8px 10px;
+      margin: 6px 0;
+      font-size: 9pt;
+    }
+    .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 6px 0; }
+    .card { border: 1px solid #e2e8f0; border-radius: 6px; padding: 8px; }
+    .card h3 { margin: 0 0 4px; font-size: 9pt; }
+    .card.primary h3 { color: #4338ca; }
+    .card.robot h3 { color: #059669; }
+    .card.wellbeing h3 { color: #e11d48; }
+    .card p { margin: 0; font-size: 8pt; color: #475569; }
+    .card ul { margin: 4px 0 0; padding-left: 14px; font-size: 7.5pt; }
+    table { width: 100%; border-collapse: collapse; font-size: 8pt; margin: 4px 0; }
+    th, td { border: 1px solid #e2e8f0; padding: 4px 6px; text-align: left; }
+    th { background: #f8fafc; }
+    .links { font-size: 8pt; }
+    .links a { color: #0369a1; }
+    .footer { margin-top: 8px; font-size: 7.5pt; color: #94a3b8; text-align: center; }
+    @media print { body { padding: 0; } .no-print { display: none; } }
+  </style>
+</head>
+<body>
+  <p class="no-print" style="background:#fef3c7;padding:6px;border-radius:4px;font-size:8pt;">
+    Print: Chrome → Ctrl+P → Save as PDF. Or download the pre-built PDF from the portfolio site.
+  </p>
+
+  <p class="badge">DSA-JC Computing / AI / Robotics / Leadership Portfolio</p>
+  <h1>Leo Suite: AI for Smarter Schools and Student Support</h1>
+  <p class="tagline">Liu Cenzhi (刘岑之) · Three full-stack AI projects · Next.js 16 · TypeScript · Live on Vercel</p>
+
+  <div class="meta">
+    <span><strong>Portfolio:</strong> leo-suite.vercel.app</span>
+    <span><strong>GitHub:</strong> github.com/mentorkokkwa/leo-suite</span>
+    <span><strong>Focus:</strong> AI engineering · product · school impact</span>
+  </div>
+
+  <div class="pitch">
+    Leo Suite explores real school problems — not toy demos. Three deployed applications cover
+    <strong>student learning</strong> (EduLens), <strong>campus robotics</strong> (CampusBot),
+    and <strong>student wellbeing with safety guardrails</strong> (YouthMentor).
+  </div>
+
+  <h2>Why This Portfolio Matters</h2>
+  <ul style="font-size:8.5pt;margin:4px 0 8px 18px;">
+    <li><strong>Real problems:</strong> marking workload, robot path planning, youth mental-health AI risks</li>
+    <li><strong>Production engineering:</strong> API routes, Zod validation, multi-provider LLM chains, mock fallbacks</li>
+    <li><strong>Responsible AI:</strong> crisis guardrails, teacher-review flags, privacy-first local storage</li>
+    <li><strong>Live demos:</strong> every project deployed — reviewers can click and test immediately</li>
+  </ul>
+
+  <h2>Three Projects</h2>
+  <div class="grid3">
+    <div class="card primary">
+      <h3>EduLens AI (Primary)</h3>
+      <p>Structured homework feedback + syllabus-aware lesson generator.</p>
+      <ul>
+        <li>Marking-style JSON feedback &amp; OCR</li>
+        <li>Lesson pack: plan, worksheet, visuals</li>
+        <li>PDF/DOCX/PPTX export</li>
+      </ul>
+    </div>
+    <div class="card robot">
+      <h3>CampusBot AI</h3>
+      <p>School service robot simulator with pathfinding.</p>
+      <ul>
+        <li>A* navigation + re-planning</li>
+        <li>Delivery / guide / library tasks</li>
+        <li>Metrics report</li>
+      </ul>
+    </div>
+    <div class="card wellbeing">
+      <h3>YouthMentor AI</h3>
+      <p>Safety-first wellbeing mentor for students.</p>
+      <ul>
+        <li>6-step structured reflection</li>
+        <li>3-layer crisis guardrails</li>
+        <li>localStorage only — no cloud data</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Live Demo Links (Click to Review)</h2>
+  <table class="links">
+    <tr><th>Project</th><th>URL</th><th>Best entry point</th></tr>
+    <tr><td>Portfolio Home</td><td>leo-suite.vercel.app</td><td>All projects + PDFs</td></tr>
+    <tr><td>EduLens AI</td><td>leo-suite-edutech-six.vercel.app/edulens</td><td>Homework analyzer</td></tr>
+    <tr><td>CampusBot AI</td><td>leo-suite-robot.vercel.app/campusbot/simulator</td><td>Run simulation</td></tr>
+    <tr><td>YouthMentor AI</td><td>leo-suite-growth-swart.vercel.app/youthmentor/safety-demo</td><td>Safety walkthrough</td></tr>
+  </table>
+
+  <h2>Technical Highlights</h2>
+  <table>
+    <tr><th>Area</th><th>Evidence</th></tr>
+    <tr><td>Full-stack</td><td>Next.js 16, React 19, TypeScript, Tailwind CSS 4</td></tr>
+    <tr><td>AI engineering</td><td>Provider chain, RAG-lite syllabus, structured JSON + Zod</td></tr>
+    <tr><td>Algorithms</td><td>A* pathfinding, dynamic obstacle re-planning</td></tr>
+    <tr><td>Safety &amp; ethics</td><td>Crisis-only UI; teacher-review flags; PDPA-minded design</td></tr>
+    <tr><td>Deployment</td><td>4 Vercel projects; mock mode for reliable school demos</td></tr>
+  </table>
+
+  <h2>School Contribution &amp; Next Steps</h2>
+  <p style="font-size:8.5pt;margin:4px 0;">
+    Pilot EduLens for teacher lesson prep; explore CampusBot for campus logistics simulation;
+    offer YouthMentor safety demo for counsellor review. Committed to responsible AI adoption
+    with teachers always in the loop.
+  </p>
+
+  <p class="footer">
+    MIT License · Not therapy or emergency care · AI character replies are simulations · Leo Suite 2026
+  </p>
+</body>
+</html>

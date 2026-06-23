@@ -1,12 +1,14 @@
 # Leo Suite — One-Page Overview
 
-> Print: open `portfolio-one-pager.html` in Chrome → Print → Save as PDF.
+> **Portfolio home:** [leo-suite.vercel.app](https://leo-suite.vercel.app)  
+> **PDF download:** [One-page PDF](assets/portfolio/leo-suite-one-page.pdf) · [Full portfolio PDF](assets/portfolio/leo-suite-full-portfolio.pdf)  
+> **Print source:** open [docs/portfolio-one-page.html](portfolio-one-page.html) in Chrome → Print → Save as PDF.
 
 ## About
 
 - **Name:** Liu Cenzhi
-- **Focus:** AI · full-stack · product · commercialization
-- **Links:** [github.com/mentorkokkwa](https://github.com/mentorkokkwa) · [leo-suite](https://github.com/mentorkokkwa/leo-suite) · [vercel.com/cenzhi](https://vercel.com/cenzhi)
+- **Focus:** AI · full-stack · product · DSA-JC portfolio
+- **Links:** [github.com/mentorkokkwa](https://github.com/mentorkokkwa) · [leo-suite.vercel.app](https://leo-suite.vercel.app) · [vercel.com/cenzhi](https://vercel.com/cenzhi)
 
 ## Elevator pitch
 

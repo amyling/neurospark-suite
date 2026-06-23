@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leo Suite — AI for Smarter Schools and Student Support</title>
+  <meta name="description" content="DSA-JC Computing / AI / Robotics portfolio: EduLens AI, CampusBot AI, and YouthMentor AI — live demos, documentation, and PDF downloads." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0b1120;
+      --surface: #111827;
+      --card: #1e293b;
+      --border: #334155;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --indigo: #818cf8;
+      --violet: #a78bfa;
+      --rose: #fb7185;
+      --emerald: #34d399;
+      --sky: #38bdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a { color: var(--indigo); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px 64px; }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 72px 0 48px;
+      background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(129,140,248,.18), transparent);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--indigo);
+      background: rgba(129,140,248,.12);
+      border: 1px solid rgba(129,140,248,.25);
+      border-radius: 999px;
+      padding: 6px 14px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .hero .sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 640px;
+      margin: 0 auto 28px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 11px 20px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform .15s, opacity .15s;
+    }
+    .btn:hover { transform: translateY(-1px); text-decoration: none; opacity: .92; }
+    .btn-primary { background: var(--indigo); color: #fff; }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    /* Section */
+    section { margin-top: 56px; }
+    section h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    section .lead {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    /* Project cards */
+    .cards { display: grid; gap: 20px; }
+    @media (min-width: 768px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .card-flag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+      width: fit-content;
+    }
+    .card-flag.primary { background: rgba(129,140,248,.15); color: var(--indigo); }
+    .card-flag.robot { background: rgba(52,211,153,.12); color: var(--emerald); }
+    .card-flag.wellbeing { background: rgba(251,113,133,.12); color: var(--rose); }
+    .card h3 { font-size: 1.15rem; font-weight: 700; }
+    .card .value { font-size: 14px; color: var(--muted); flex: 1; }
+    .card-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+    .card-actions .btn { font-size: 12px; padding: 8px 14px; border-radius: 8px; }
+    .btn-demo { background: rgba(255,255,255,.08); color: var(--text); border: 1px solid var(--border); }
+    .btn-github { background: rgba(255,255,255,.04); color: var(--muted); border: 1px solid var(--border); }
+
+    /* Video + PDF row */
+    .resources {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 768px) { .resources { grid-template-columns: 1fr 1fr; } }
+    .resource-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .resource-box h3 { font-size: 1rem; margin-bottom: 12px; }
+    video {
+      width: 100%;
+      border-radius: 10px;
+      background: #000;
+      aspect-ratio: 16/9;
+    }
+    .video-fallback {
+      aspect-ratio: 16/9;
+      background: var(--card);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border: 1px dashed var(--border);
+    }
+    .pdf-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .pdf-list li a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .pdf-list li a:hover { border-color: var(--indigo); text-decoration: none; }
+    .pdf-icon {
+      width: 36px; height: 36px;
+      background: rgba(129,140,248,.15);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; flex-shrink: 0;
+    }
+    .pdf-meta { font-size: 12px; color: var(--muted); font-weight: 400; }
+
+    /* Quick links table */
+    .links-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    .links-table th, .links-table td {
+      text-align: left;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .links-table th { color: var(--muted); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+    .links-table tr:last-child td { border-bottom: none; }
+    .links-table td:first-child { font-weight: 600; }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <p class="badge">Built for DSA-JC Computing / AI / Robotics / Leadership Portfolio</p>
+      <h1>Leo Suite<br /><span style="color:var(--indigo)">NeuroSpark Suite Portfolio Home</span></h1>
+      <p class="sub">
+        Three AI projects exploring how technology can improve student learning,
+        school service robotics, and student wellbeing — with responsible safety design.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="assets/portfolio/leo-suite-one-page.pdf" download>Download One-Page PDF</a>
+        <a class="btn btn-ghost" href="https://github.com/mentorkokkwa/leo-suite" target="_blank" rel="noopener">GitHub Portfolio</a>
+      </div>
+    </header>
+
+    <section id="projects">
+      <h2>Three Projects, One Portfolio</h2>
+      <p class="lead">Each app is deployed live on Vercel. Click <strong>Live Demo</strong> to explore — no login required.</p>
+      <div class="cards">
+        <article class="card">
+          <span class="card-flag primary">Primary Project · Computing / AI</span>
+          <h3>EduLens AI</h3>
+          <p class="value">Structured homework feedback and syllabus-aware lesson generation — helping teachers save marking time and giving students actionable mistake analysis.</p>
+          <div class="card-actions">
+            <a class="btn btn-demo" href="https://leo-suite-edutech-six.vercel.app/edulens" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn btn-github" href="https://github.com/mentorkokkwa/leo-suite-edutech-showcase" target="_blank" rel="noopener">Showcase</a>
+          </div>
+        </article>
+        <article class="card">
+          <span class="card-flag robot">Robotics · Algorithms</span>
+          <h3>CampusBot AI</h3>
+          <p class="value">School service robot simulator with A* pathfinding, dynamic re-planning, and task metrics — a bridge from software to real campus automation.</p>
+          <div class="card-actions">
+            <a class="btn btn-demo" href="https://leo-suite-robot.vercel.app/campusbot/simulator" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn btn-github" href="https://github.com/mentorkokkwa/leo-suite-robot" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+        <article class="card">
+          <span class="card-flag wellbeing">Leadership · Safety &amp; Ethics</span>
+          <h3>YouthMentor AI</h3>
+          <p class="value">Safety-first digital mentor for mood check-in and structured reflection — crisis guardrails before any coaching response, privacy-first local storage.</p>
+          <div class="card-actions">
+            <a class="btn btn-demo" href="https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo" target="_blank" rel="noopener">Safety Demo</a>
+            <a class="btn btn-github" href="https://github.com/mentorkokkwa/leo-suite-growth-showcase" target="_blank" rel="noopener">Showcase</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2>Portfolio Materials</h2>
+      <p class="lead">For DSA application reviewers — quick overview video and downloadable PDFs.</p>
+      <div class="resources">
+        <div class="resource-box">
+          <h3>1-Minute Overview</h3>
+          <video id="overview-video" controls preload="metadata" style="display:none">
+            <source src="assets/video/leo-suite-overview.mp4" type="video/mp4" />
+          </video>
+          <div id="video-fallback" class="video-fallback">
+            Overview video will appear here once <code>assets/video/leo-suite-overview.mp4</code> is added to the repo.<br /><br />
+            <a href="assets/video/README.md">Upload instructions</a>
+          </div>
+        </div>
+        <div class="resource-box">
+          <h3>Portfolio PDFs</h3>
+          <ul class="pdf-list">
+            <li>
+              <a href="assets/portfolio/leo-suite-one-page.pdf" download>
+                <span class="pdf-icon">📄</span>
+                <span>
+                  One-Page Summary<br />
+                  <span class="pdf-meta">For application upload · quick reviewer scan</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="assets/portfolio/leo-suite-full-portfolio.pdf" download>
+                <span class="pdf-icon">📘</span>
+                <span>
+                  Full Portfolio (8–12 pages)<br />
+                  <span class="pdf-meta">Interview prep · EduLens focus · architecture &amp; demos</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="docs/portfolio-one-page.html" target="_blank" rel="noopener">
+                <span class="pdf-icon">🖨</span>
+                <span>
+                  Print HTML Sources<br />
+                  <span class="pdf-meta">Chrome → Print → Save as PDF (always up to date)</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="links">
+      <h2>All Live Links</h2>
+      <p class="lead">Everything in one place for portfolio review.</p>
+      <table class="links-table">
+        <thead>
+          <tr><th>Project</th><th>Live Demo</th><th>Public Docs</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Portfolio Home</td>
+            <td><a href="https://leo-suite.vercel.app">leo-suite.vercel.app</a></td>
+            <td><a href="https://github.com/mentorkokkwa/leo-suite">leo-suite</a></td>
+          </tr>
+          <tr>
+            <td>EduLens AI</td>
+            <td><a href="https://leo-suite-edutech-six.vercel.app/edulens">Live Demo</a></td>
+            <td><a href="https://github.com/mentorkokkwa/leo-suite-edutech-showcase">Showcase</a></td>
+          </tr>
+          <tr>
+            <td>CampusBot AI</td>
+            <td><a href="https://leo-suite-robot.vercel.app/campusbot">Live Demo</a></td>
+            <td><a href="https://github.com/mentorkokkwa/leo-suite-robot">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>YouthMentor AI</td>
+            <td><a href="https://leo-suite-growth-swart.vercel.app/youthmentor">Live Demo</a></td>
+            <td><a href="https://github.com/mentorkokkwa/leo-suite-growth-showcase">Showcase</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p><strong>Liu Cenzhi</strong> · DSA-JC Computing / AI / Robotics / Leadership Portfolio · 2026</p>
+      <p style="margin-top:8px">
+        <a href="https://github.com/mentorkokkwa">github.com/mentorkokkwa</a>
+        · MIT License · Not a medical or counselling service
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    /** Show embedded video when the MP4 file is available on the deployed site. */
+    (function () {
+      var video = document.getElementById("overview-video");
+      var fallback = document.getElementById("video-fallback");
+      if (!video || !fallback) return;
+      fetch("assets/video/leo-suite-overview.mp4", { method: "HEAD" })
+        .then(function (res) {
+          if (res.ok) {
+            video.style.display = "block";
+            fallback.style.display = "none";
+            video.load();
+          }
+        })
+        .catch(function () { /* keep fallback visible */ });
+    })();
+  </script>
+</body>
+</html>

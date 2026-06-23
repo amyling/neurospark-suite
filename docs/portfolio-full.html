@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leo Suite — Full Portfolio</title>
+  <style>
+    @page { size: A4; margin: 14mm; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-size: 10pt;
+      line-height: 1.5;
+      color: #1e293b;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .page {
+      padding: 14mm;
+      page-break-after: always;
+      min-height: 260mm;
+    }
+    .page:last-child { page-break-after: auto; }
+    h1 { font-size: 22pt; margin: 0 0 8px; color: #0f172a; }
+    h2 { font-size: 13pt; color: #0369a1; margin: 16px 0 8px; border-bottom: 2px solid #e0f2fe; padding-bottom: 4px; }
+    h3 { font-size: 11pt; color: #4338ca; margin: 12px 0 6px; }
+    h4 { font-size: 10pt; margin: 8px 0 4px; color: #475569; }
+    p { margin: 0 0 8px; }
+    ul, ol { margin: 0 0 8px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    table { width: 100%; border-collapse: collapse; font-size: 9pt; margin: 8px 0; }
+    th, td { border: 1px solid #e2e8f0; padding: 6px 8px; text-align: left; vertical-align: top; }
+    th { background: #f8fafc; }
+    .cover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 260mm;
+      text-align: center;
+      background: linear-gradient(180deg, #f0f9ff 0%, #fff 40%);
+    }
+    .cover .badge {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4338ca;
+      font-size: 9pt;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 24px;
+    }
+    .cover h1 { font-size: 26pt; margin-bottom: 12px; }
+    .cover .sub { font-size: 12pt; color: #64748b; max-width: 420px; margin: 0 auto 32px; }
+    .cover .author { font-size: 11pt; color: #334155; }
+    .cover .links { font-size: 9pt; margin-top: 24px; color: #64748b; }
+    .highlight {
+      background: #f0f9ff;
+      border-left: 4px solid #0ea5e9;
+      padding: 10px 12px;
+      margin: 10px 0;
+      font-size: 9.5pt;
+    }
+    .screenshot {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background: #f8fafc;
+      padding: 16px;
+      text-align: center;
+      font-size: 9pt;
+      color: #64748b;
+      margin: 10px 0;
+    }
+    .screenshot strong { display: block; color: #334155; margin-bottom: 4px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .tag { display: inline-block; background: #f1f5f9; padding: 2px 8px; border-radius: 4px; font-size: 8pt; margin: 2px; }
+    .footer-note { font-size: 8pt; color: #94a3b8; margin-top: 16px; text-align: center; }
+    @media print { .no-print { display: none; } }
+  </style>
+</head>
+<body>
+  <p class="no-print" style="padding:12px;background:#fef3c7;font-size:9pt;">
+    Full portfolio — Chrome → Print → Save as PDF. Pre-built PDF: assets/portfolio/leo-suite-full-portfolio.pdf
+  </p>
+
+  <!-- PAGE 1: Cover -->
+  <section class="page cover">
+    <span class="badge">DSA-JC Computing / AI / Robotics / Leadership Portfolio</span>
+    <h1>Leo Suite</h1>
+    <p style="font-size:14pt;color:#4338ca;font-weight:600;margin-bottom:8px;">AI for Smarter Schools and Student Support</p>
+    <p class="sub">Three deployed AI applications exploring student learning, campus robotics, and responsible wellbeing technology.</p>
+    <p class="author"><strong>Liu Cenzhi</strong> (刘岑之)<br />June 2026</p>
+    <p class="links">
+      Portfolio: leo-suite.vercel.app<br />
+      GitHub: github.com/mentorkokkwa/leo-suite
+    </p>
+  </section>
+
+  <!-- PAGE 2: Student Profile -->
+  <section class="page">
+    <h2>Student Profile &amp; Motivation</h2>
+    <p>
+      I am applying for DSA-JC with a focus on <strong>Computing, AI, Robotics, and Leadership</strong>.
+      Rather than building isolated coding exercises, I designed <strong>Leo Suite</strong> — a coherent
+      three-project portfolio that addresses real problems I observed in school: teachers overwhelmed
+      by marking, growing interest in campus automation, and the risks of unstructured AI chat for student wellbeing.
+    </p>
+    <div class="highlight">
+      My goal is to show not only technical ability, but also <strong>product thinking</strong>,
+      <strong>ethical AI design</strong>, and <strong>deployment discipline</strong> — every project is live on Vercel with documented demo flows.
+    </div>
+    <h3>What I Built</h3>
+    <table>
+      <tr><th>Project</th><th>Domain</th><th>Core Skill Demonstrated</th></tr>
+      <tr><td><strong>EduLens AI</strong></td><td>AI for Smarter Schools</td><td>Structured LLM outputs, RAG, export pipelines</td></tr>
+      <tr><td><strong>CampusBot AI</strong></td><td>Robotics / Algorithms</td><td>A* pathfinding, simulation, metrics</td></tr>
+      <tr><td><strong>YouthMentor AI</strong></td><td>Leadership / Safety</td><td>Crisis guardrails, privacy-first UX</td></tr>
+    </table>
+    <h3>Technology Stack (Shared)</h3>
+    <p>
+      <span class="tag">Next.js 16</span>
+      <span class="tag">React 19</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">Tailwind CSS 4</span>
+      <span class="tag">Zod</span>
+      <span class="tag">Vercel</span>
+      <span class="tag">Multi-provider LLM</span>
+    </p>
+    <h3>Why Three Apps?</h3>
+    <p>
+      A single bloated codebase would dilute the story. Three focused applications let reviewers
+      evaluate depth in AI engineering (EduLens), algorithms (CampusBot), and safety ethics (YouthMentor)
+      — while sharing a common TypeScript and deployment foundation.
+    </p>
+  </section>
+
+  <!-- PAGE 3: Overview Table -->
+  <section class="page">
+    <h2>Project Overview</h2>
+    <table>
+      <tr>
+        <th>Dimension</th>
+        <th>EduLens AI</th>
+        <th>CampusBot AI</th>
+        <th>YouthMentor AI</th>
+      </tr>
+      <tr>
+        <td><strong>One-line value</strong></td>
+        <td>Structured homework feedback &amp; lesson generation for teachers and students</td>
+        <td>School robot simulator with A* navigation and task scenarios</td>
+        <td>Safety-first digital mentor for mood check-in and reflection</td>
+      </tr>
+      <tr>
+        <td><strong>Primary users</strong></td>
+        <td>Students, teachers, tutors</td>
+        <td>School IT, robotics club, DSA reviewers</td>
+        <td>Secondary students, counsellors (review)</td>
+      </tr>
+      <tr>
+        <td><strong>Live demo</strong></td>
+        <td>leo-suite-edutech-six.vercel.app/edulens</td>
+        <td>leo-suite-robot.vercel.app/campusbot</td>
+        <td>leo-suite-growth-swart.vercel.app/youthmentor</td>
+      </tr>
+      <tr>
+        <td><strong>Public docs</strong></td>
+        <td>leo-suite-edutech-showcase</td>
+        <td>leo-suite-robot (public)</td>
+        <td>leo-suite-growth-showcase</td>
+      </tr>
+      <tr>
+        <td><strong>Data storage</strong></td>
+        <td>Browser localStorage + in-memory API store</td>
+        <td>Client-side only (simulation)</td>
+        <td>Browser localStorage only — no server DB</td>
+      </tr>
+      <tr>
+        <td><strong>Portfolio weight</strong></td>
+        <td><strong>Primary (4 pages)</strong></td>
+        <td>Supporting (2 pages)</td>
+        <td>Supporting (2 pages)</td>
+      </tr>
+    </table>
+
+    <h2>EduLens AI — Problem &amp; Users</h2>
+    <h3>Problem</h3>
+    <p>
+      Teachers spend 2–4 hours marking a single worksheet for 35 students. Students receive ticks and crosses
+      but rarely get structured feedback on <em>why</em> they made mistakes or <em>what</em> to practise next.
+      Generic AI chatbots give inconsistent free-form answers unsuitable for mistake books, dashboards, or printable reports.
+    </p>
+    <h3>Solution</h3>
+    <p>
+      EduLens returns <strong>validated, structured JSON</strong> — marking-style feedback, mistake type tags,
+      similar practice questions, syllabus-aware lesson packs, and exportable PDF/DOCX/PPTX reports.
+      Teachers remain in the loop via <code>teacherReviewRecommended</code> flags.
+    </p>
+    <h3>Target Users</h3>
+    <ul>
+      <li><strong>Students (13–18):</strong> Understand homework mistakes; build a mistake book</li>
+      <li><strong>Teachers / tutors:</strong> Draft lesson materials faster with syllabus RAG</li>
+      <li><strong>DSA reviewers:</strong> Evaluate AI EdTech safely via mock mode — no API keys exposed</li>
+    </ul>
+  </section>
+
+  <!-- PAGE 4: EduLens Features -->
+  <section class="page">
+    <h2>EduLens AI — Core Features</h2>
+    <h3>1. Homework Analyzer</h3>
+    <p>Text paste or image upload (vision OCR). Returns per-question scores, mistake types
+      (<em>conceptual, calculation, careless, incomplete, method</em>), improvement tips, and similar questions.</p>
+    <div class="screenshot">
+      <strong>Live: /edulens/homework-analyzer</strong>
+      Upload a worksheet photo or paste text → structured feedback cards → mistake book entry
+    </div>
+
+    <h3>2. Lesson Generator</h3>
+    <p>3-part generation pipeline with staged loading UX. Outputs lesson plan, worksheet, answer key,
+      visual learning steps, and subject-aware diagrams. User selects deliverables (plan only, worksheet, etc.).</p>
+    <div class="screenshot">
+      <strong>Live: /edulens/lesson-generator</strong>
+      Enter topic + syllabus level → multi-stage progress → shareable report link
+    </div>
+
+    <h3>3. Mistake Book &amp; Dashboard</h3>
+    <p>Persistent local history groups errors by type and knowledge point. Dashboard aggregates usage stats for self-review.</p>
+
+    <h3>4. Export Pipeline</h3>
+    <table>
+      <tr><th>Format</th><th>Use case</th></tr>
+      <tr><td>PDF</td><td>Printable homework report for parent-teacher conference</td></tr>
+      <tr><td>DOCX</td><td>Editable lesson plan for teacher refinement</td></tr>
+      <tr><td>PPTX</td><td>Classroom slides from visual lesson steps</td></tr>
+    </table>
+  </section>
+
+  <!-- PAGE 5: EduLens Architecture -->
+  <section class="page">
+    <h2>EduLens AI — Architecture &amp; Screenshots</h2>
+    <div class="highlight">
+      High-level flow: React UI → Next.js API Routes → EduLens Service → Prompt Builder →
+      Provider Chain → Zod Validator → UI + localStorage
+    </div>
+    <h3>API Routes (9 endpoints)</h3>
+    <table>
+      <tr><th>Route</th><th>Purpose</th></tr>
+      <tr><td>/api/edulens/homework/analyze</td><td>Run homework analysis</td></tr>
+      <tr><td>/api/edulens/lesson/generate</td><td>Generate lesson pack (multi-part)</td></tr>
+      <tr><td>/api/edulens/extract-content</td><td>Vision OCR</td></tr>
+      <tr><td>/api/edulens/mistake-book</td><td>Mistake book CRUD</td></tr>
+      <tr><td>/api/edulens/dashboard</td><td>Usage stats</td></tr>
+      <tr><td>/api/edulens/ai-status</td><td>Provider health (demo verification)</td></tr>
+    </table>
+    <h3>RAG &amp; Syllabus</h3>
+    <p>
+      Indexed MOE-aligned topic catalog with PDF chunks. RAG context injected into prompts;
+      post-generation sanitization removes citation leaks from lesson output.
+    </p>
+    <h3>Demo Screenshots (Visit Live URLs)</h3>
+    <div class="two-col">
+      <div class="screenshot"><strong>Homework Results</strong>Structured JSON feedback cards with mistake tags</div>
+      <div class="screenshot"><strong>Lesson Pack</strong>Plan + worksheet + visual steps with LaTeX math</div>
+      <div class="screenshot"><strong>Mistake Book</strong>Aggregated error patterns over time</div>
+      <div class="screenshot"><strong>AI Status</strong>/api/edulens/ai-status — mock mode indicator</div>
+    </div>
+  </section>
+
+  <!-- PAGE 6: EduLens Technical -->
+  <section class="page">
+    <h2>EduLens AI — Technical Details &amp; Learning Value</h2>
+    <h3>Multi-Provider LLM Chain</h3>
+    <p>
+      Unified <code>completeJSON()</code> interface with ordered fallback:
+      Agnes → Gemini → Groq → OpenRouter → Mock. Vercel demo uses <code>EDULENS_AI_MODE=mock</code>
+      for zero-cost, deterministic seeded responses.
+    </p>
+    <h3>Structured JSON Pipeline</h3>
+    <ol>
+      <li>Build prompt with RAG context</li>
+      <li>LLM completion → extract JSON</li>
+      <li>Zod validate → apply safety defaults</li>
+      <li>Enrich (visual lessons, media, assessment alignment)</li>
+      <li>On failure: compact prompt → next provider → mock</li>
+    </ol>
+    <h3>Quality Engineering</h3>
+    <ul>
+      <li>~90 library modules under <code>src/lib/edulens/</code></li>
+      <li>Vitest unit tests: prompt builder, JSON parser, RAG retrieval, visual type detection</li>
+      <li>RAG citation sanitization; subject-aware diagram rendering</li>
+      <li>3-part lesson generation respects token limits</li>
+    </ul>
+    <h3>What I Learned (EduLens)</h3>
+    <table>
+      <tr><th>Lesson</th><th>Application</th></tr>
+      <tr><td>Structure beats chat</td><td>Zod schemas enable mistake books, exports, dashboards</td></tr>
+      <tr><td>Mock mode is engineering</td><td>Reliable DSA demos without API key exposure</td></tr>
+      <tr><td>Teachers in the loop</td><td>Disclaimers + review flags, not "AI replaces marking"</td></tr>
+      <tr><td>Token limits are real</td><td>Multi-part generation + compact/minimal prompt fallbacks</td></tr>
+    </table>
+  </section>
+
+  <!-- PAGE 7: CampusBot -->
+  <section class="page">
+    <h2>CampusBot AI — Scenario &amp; Algorithm</h2>
+    <p>
+      CampusBot simulates how a service robot could navigate a school campus — delivering worksheets,
+      guiding visitors, or returning library books. It demonstrates algorithmic thinking and robotics interest
+      without requiring hardware in the DSA review.
+    </p>
+    <h3>Task Scenarios</h3>
+    <ul>
+      <li><strong>Worksheet delivery:</strong> Robot picks up materials from staff room, navigates to classroom</li>
+      <li><strong>Visitor guide:</strong> Escort from reception to destination with obstacle avoidance</li>
+      <li><strong>Library return:</strong> Collect items and navigate back to library</li>
+    </ul>
+    <h3>A* Pathfinding Engine</h3>
+    <div class="highlight">
+      Grid-based school map with walls, doors, and dynamic obstacles.
+      A* finds optimal path → step simulation → on collision, dynamic re-plan → metrics report.
+    </div>
+    <h3>Algorithm Flow</h3>
+    <ol>
+      <li>Parse task goal cell from scenario definition</li>
+      <li>Build cost grid from map (walls = infinite cost)</li>
+      <li>Run A* with Manhattan heuristic</li>
+      <li>Simulate step-by-step movement</li>
+      <li>On blocked cell: invalidate path segment, re-plan from current position</li>
+      <li>Output metrics: total steps, collisions, re-plans, success/fail</li>
+    </ol>
+    <div class="screenshot">
+      <strong>Live: /campusbot/simulator</strong>
+      Select scenario → watch robot navigate → view metrics report
+    </div>
+  </section>
+
+  <!-- PAGE 8: CampusBot Metrics -->
+  <section class="page">
+    <h2>CampusBot AI — Metrics &amp; Technical Evidence</h2>
+    <h3>Simulation Metrics</h3>
+    <table>
+      <tr><th>Metric</th><th>What it shows</th></tr>
+      <tr><td>Steps taken</td><td>Path efficiency vs optimal A* distance</td></tr>
+      <tr><td>Collisions</td><td>Dynamic obstacle handling effectiveness</td></tr>
+      <tr><td>Re-plans</td><td>Robustness when environment changes mid-task</td></tr>
+      <tr><td>Task completion</td><td>End-to-end scenario success rate</td></tr>
+    </table>
+    <h3>Tech Stack</h3>
+    <p>
+      <span class="tag">Next.js</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">Client-side simulation</span>
+      <span class="tag">Canvas / SVG map</span>
+      <span class="tag">No API keys required</span>
+    </p>
+    <h3>What I Learned (CampusBot)</h3>
+    <ul>
+      <li>Pathfinding algorithms have direct real-world application in robotics and logistics</li>
+      <li>Simulation before hardware reduces cost and accelerates iteration</li>
+      <li>Clear metrics make algorithm behaviour reviewable by non-coders (teachers, reviewers)</li>
+    </ul>
+    <h3>Future: Hardware Bridge</h3>
+    <p>
+      The simulator is designed as a software prototype for a future Arduino / ROS2 hardware integration —
+      same task definitions, real motor control. Planned as JC project extension.
+    </p>
+    <div class="screenshot">
+      <strong>School Map View</strong>
+      Grid layout with rooms, corridors, obstacles — robot path highlighted in real time
+    </div>
+  </section>
+
+  <!-- PAGE 9: YouthMentor -->
+  <section class="page">
+    <h2>YouthMentor AI — Safety-First Wellbeing Design</h2>
+    <p>
+      YouthMentor addresses student exam stress and emotional pressure — but unlike engagement-optimised AI companions,
+      it is designed with <strong>hard safety boundaries</strong> and <strong>structured reflection</strong> rather than open-ended chat.
+    </p>
+    <h3>Core Flow</h3>
+    <ol>
+      <li>Mood check-in + stress source selection (+ voice input option)</li>
+      <li>Choose mentor persona</li>
+      <li>Six guided reflection prompts (CBT-inspired framework)</li>
+      <li><strong>Safety pipeline</strong> runs before any coaching response</li>
+      <li>Normal risk → mentor JSON response + action plan</li>
+      <li>High risk → crisis panel only (helplines, no coaching LLM)</li>
+    </ol>
+    <div class="highlight" style="border-color:#fecdd3;background:#fff1f2;">
+      <strong>Safety design principle:</strong> Never rely on the LLM alone for crisis detection.
+      Keyword scan runs first; high-risk input blocks before any coaching prompt is sent.
+    </div>
+    <h3>Safety Pipeline</h3>
+    <table>
+      <tr><th>Layer</th><th>Action</th></tr>
+      <tr><td>1. Keyword scan</td><td>Detect self-harm / crisis language</td></tr>
+      <tr><td>2. Risk classifier</td><td>Score remaining input</td></tr>
+      <tr><td>3. Crisis-only UI</td><td>Helplines and resources — zero coaching LLM</td></tr>
+    </table>
+    <p><strong>Safety walkthrough:</strong> leo-suite-growth-swart.vercel.app/youthmentor/safety-demo</p>
+  </section>
+
+  <!-- PAGE 10: YouthMentor Features -->
+  <section class="page">
+    <h2>YouthMentor AI — Features &amp; Responsible Design</h2>
+    <h3>Additional Features</h3>
+    <ul>
+      <li><strong>Mood trend chart:</strong> Visualise intensity from saved reflection history</li>
+      <li><strong>Voice input:</strong> Web Speech API on check-in, reflection, character chat</li>
+      <li><strong>Trust metrics:</strong> Home page compares responsible design vs engagement-first AI companions</li>
+      <li><strong>Character chat:</strong> Empathy-first protocol; labeled AI simulation (not real persons)</li>
+      <li><strong>Privacy:</strong> All data in browser localStorage — no account, no cloud storage</li>
+    </ul>
+    <h3>What YouthMentor is NOT</h3>
+    <ul>
+      <li>Not therapy, diagnosis, or emergency care</li>
+      <li>Not official communication from any real person or faith leader</li>
+      <li>Not an engagement-optimised companion designed to maximise chat volume</li>
+    </ul>
+    <h3>What I Learned (YouthMentor)</h3>
+    <table>
+      <tr><th>Lesson</th><th>Evidence in product</th></tr>
+      <tr><td>Safety cannot be an afterthought</td><td>3-layer pipeline before coaching LLM</td></tr>
+      <tr><td>Structure reduces harm</td><td>6-prompt framework vs infinite open chat</td></tr>
+      <tr><td>Privacy builds school trust</td><td>localStorage only; no server database</td></tr>
+      <tr><td>Empathy ≠ dependency</td><td>Empathy-first replies + real-world help-seeking prompts</td></tr>
+    </table>
+    <div class="screenshot">
+      <strong>Crisis Panel Demo</strong>
+      Pre-loaded high-risk sample → guardrail blocks coaching → crisis resources only
+    </div>
+  </section>
+
+  <!-- PAGE 11: Architecture & Deployment -->
+  <section class="page">
+    <h2>System Architecture &amp; Deployment</h2>
+    <h3>Deployment Topology</h3>
+    <table>
+      <tr><th>Vercel Project</th><th>App</th><th>Production URL</th></tr>
+      <tr><td>leo-suite</td><td>Portfolio home (this site)</td><td>leo-suite.vercel.app</td></tr>
+      <tr><td>leo-suite-edutech</td><td>EduLens AI</td><td>leo-suite-edutech-six.vercel.app</td></tr>
+      <tr><td>leo-suite-growth</td><td>YouthMentor AI</td><td>leo-suite-growth-swart.vercel.app</td></tr>
+      <tr><td>leo-suite-robot</td><td>CampusBot AI</td><td>leo-suite-robot.vercel.app</td></tr>
+    </table>
+    <h3>Repository Strategy</h3>
+    <p>
+      Full source for EduLens and YouthMentor lives in <strong>private</strong> deployment repos (API routes, prompts).
+      <strong>Public showcase</strong> repos contain documentation, demo links, and non-sensitive type samples —
+      protecting IP while enabling DSA portfolio review.
+    </p>
+    <h3>Shared AI Layer</h3>
+    <p>EduLens and YouthMentor share LLM abstraction via <code>EDULENS_*</code> environment variables.
+      Provider chain with mock fallback ensures reliable demos on Vercel without API keys.</p>
+    <h3>Demo Links &amp; GitHub</h3>
+    <table>
+      <tr><th>Resource</th><th>URL</th></tr>
+      <tr><td>Portfolio home</td><td>https://leo-suite.vercel.app</td></tr>
+      <tr><td>Meta repo</td><td>https://github.com/mentorkokkwa/leo-suite</td></tr>
+      <tr><td>EduLens showcase</td><td>https://github.com/mentorkokkwa/leo-suite-edutech-showcase</td></tr>
+      <tr><td>YouthMentor showcase</td><td>https://github.com/mentorkokkwa/leo-suite-growth-showcase</td></tr>
+      <tr><td>CampusBot source</td><td>https://github.com/mentorkokkwa/leo-suite-robot</td></tr>
+    </table>
+  </section>
+
+  <!-- PAGE 12: Roadmap -->
+  <section class="page">
+    <h2>Future Roadmap &amp; School Contribution</h2>
+    <h3>Planned Extensions</h3>
+    <table>
+      <tr><th>Project</th><th>Next step</th><th>School value</th></tr>
+      <tr><td>EduLens</td><td>Teacher pilot for lesson prep; class dashboard</td><td>Reduce marking prep time</td></tr>
+      <tr><td>CampusBot</td><td>Arduino / ROS2 hardware prototype</td><td>Robotics club, STEM showcase</td></tr>
+      <tr><td>YouthMentor</td><td>Counsellor review of safety demo; anonymous insights</td><td>Wellbeing support tool evaluation</td></tr>
+    </table>
+    <h3>How I Can Contribute to School</h3>
+    <ul>
+      <li>Lead AI literacy workshops — responsible use, not just prompt engineering</li>
+      <li>Support teachers exploring AI-assisted lesson preparation (EduLens demo)</li>
+      <li>Contribute to robotics / computing club with CampusBot simulator</li>
+      <li>Advocate for safety-first youth AI design based on YouthMentor research</li>
+    </ul>
+    <h3>Commercial &amp; Social Thinking</h3>
+    <p>
+      Freemium model (20 msgs/day) for YouthMentor; school B2B anonymous insights (no chat transcripts, PDPA-minded).
+      EduLens positioned as teacher-augmenting, not replacing professional judgment.
+    </p>
+    <div class="highlight">
+      Thank you for reviewing Leo Suite. All projects are live — please click the demo links and explore.
+      For questions: github.com/mentorkokkwa
+    </div>
+    <p class="footer-note">
+      MIT License · Not therapy or emergency care · AI character replies are simulations · Leo Suite 2026 · Liu Cenzhi
+    </p>
+  </section>
+</body>
+</html>
