@@ -35,8 +35,8 @@ EDULENS_SKIP_OLLAMA=true
 NEXT_PUBLIC_DEMO_MODE=true
 ```
 
-**Production URL:** https://leo-suite-growth-swart.vercel.app/youthmentor  
-**Safety walkthrough:** https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo
+**Production URL:** https://leo-suite-growth-swart.vercel.app/youthmentor?locale=en  
+**Safety walkthrough:** https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo?locale=en
 
 ---
 
@@ -55,7 +55,7 @@ EDULENS_RAG_WEB_ENABLED=false
 NEXT_PUBLIC_DEMO_MODE=true
 ```
 
-Live: https://leo-suite-edutech-six.vercel.app/edulens
+Live: https://leo-suite-edutech-six.vercel.app/edulens?locale=en
 
 ---
 
@@ -68,7 +68,7 @@ Live: https://leo-suite-edutech-six.vercel.app/edulens
 
 No API keys required — fully client-side simulation.
 
-Live: https://leo-suite-robot.vercel.app/campusbot · [/simulator](https://leo-suite-robot.vercel.app/campusbot/simulator)
+Live: https://leo-suite-robot.vercel.app/campusbot?locale=en · [/simulator](https://leo-suite-robot.vercel.app/campusbot/simulator?locale=en)
 
 ---
 

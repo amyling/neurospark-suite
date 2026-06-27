@@ -3,7 +3,7 @@
 ## 错误信息
 
 ```
-Git author lingcenfan@gmail.com must have access to the team Cenzhi on Vercel to create deployments.
+Git author <unverified-email> must have access to the team Cenzhi on Vercel to create deployments.
 Hobby teams do not support collaboration. Please upgrade to Pro to add team members.
 ```
 
@@ -13,9 +13,9 @@ Hobby teams do not support collaboration. Please upgrade to Pro to add team memb
 |------|------|
 | Vercel 团队 | **Cenzhi**（Hobby 计划） |
 | **正确 Git 邮箱** | `cenzhi128@gmail.com`（Cenzhi Liu / mentorkokkwa） |
-| **错误 Git 邮箱** | `lingcenfan@gmail.com`（本机之前用的 amy 账号邮箱） |
+| **错误 Git 邮箱** | 未在 GitHub / Vercel 上 verified 的旧邮箱 |
 | growth / edutech | **Private** 仓库 → Hobby 团队对 private repo 严格校验 commit 作者 |
-| robot | **Public** 仓库 → 同样错误邮箱也能部署（所以只有另外两个 block） |
+| robot | **Public** 仓库 → 同样错误邮箱也可能部署失败 |
 
 > **改环境变量不会直接导致 Git author 报错。** 但保存 env 后会点 Redeploy，这时 Vercel 才检查 commit 作者；若邮箱不对，就会 block。时间上是 env 改动触发了 redeploy，根因仍是 **private repo + Git 作者邮箱不匹配**。
 
@@ -27,9 +27,9 @@ Vercel 通过 **GitHub Login Connection** 比对：commit 作者邮箱必须 = m
 
 1. 浏览器登录 **mentorkokkwa** 的 Vercel：https://vercel.com/account/settings/authentication  
 2. **GitHub** → **Disconnect**（若已连接）→ **Connect** 再次授权  
-3. 确保连接的是 GitHub 账号 **mentorkokkwa**（不是 amyling 等其他账号）  
+3. 确保连接的是 GitHub 账号 **mentorkokkwa**（不是其他账号）  
 4. 打开 GitHub **mentorkokkwa** → Settings → Emails  
-5. 确认 **`cenzhi128@gmail.com`** 已 **Verified**（不要用 lingcenfan@gmail.com）  
+5. 确认 **`cenzhi128@gmail.com`** 已 **Verified**  
 6. 回到 Vercel → 项目 → **Deployments** → 对最新 commit **Redeploy**
 
 ---
@@ -100,7 +100,7 @@ Hobby **Team** 不支持协作者。可选：
 
 | 选项 | 说明 |
 |------|------|
-| 升级到 Pro | 可添加 `lingcenfan@gmail.com` 为团队成员 |
+| 升级到 Pro | 可添加额外 verified 邮箱为团队成员 |
 | 迁到个人账号 | 在 **mentorkokkwa 个人** scope 下 Import 项目（非 Cenzhi team） |
 
 ---
@@ -108,7 +108,7 @@ Hobby **Team** 不支持协作者。可选：
 ## 本机一键脚本
 
 ```powershell
-cd C:\Users\HP\Downloads\cenling\neurospark\haibao_project\scripts
+cd <path-to>/haibao_project/scripts
 .\fix-vercel-git-author.ps1 -Email "cenzhi128@gmail.com" -Name "Cenzhi Liu"
 ```
 
@@ -122,9 +122,9 @@ cd C:\Users\HP\Downloads\cenling\neurospark\haibao_project\scripts
 
 | 检查 | URL |
 |------|-----|
-| YouthMentor | https://leo-suite-growth-swart.vercel.app/youthmentor |
-| EduLens | https://leo-suite-edutech-six.vercel.app/edulens |
-| CampusBot | https://leo-suite-robot.vercel.app/campusbot |
+| YouthMentor | https://leo-suite-growth-swart.vercel.app/youthmentor?locale=en |
+| EduLens | https://leo-suite-edutech-six.vercel.app/edulens?locale=en |
+| CampusBot | https://leo-suite-robot.vercel.app/campusbot?locale=en |
 
 Vercel Deployments 状态应为 **Ready**，不再出现 Git author block。
 
@@ -132,6 +132,6 @@ Vercel Deployments 状态应为 **Ready**，不再出现 Git author block。
 
 ## 不要做的事
 
-- 不要用 **amyling** 账号 push 到 mentorkokkwa 仓库后再指望 cenzhi 团队部署  
+- 不要用 **其他 GitHub 账号** push 到 mentorkokkwa 仓库后再指望 cenzhi 团队部署  
 - 不要在未关联邮箱的情况下反复 Redeploy（会产生大量 UNKNOWN 卡住记录）  
 - 不要升级 Pro 除非确实需要多人协作

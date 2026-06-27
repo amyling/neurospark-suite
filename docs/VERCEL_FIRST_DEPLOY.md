@@ -40,8 +40,8 @@ NEXT_PUBLIC_DEMO_MODE=true
 
 | App | URL |
 |-----|-----|
-| YouthMentor | https://leo-suite-growth-swart.vercel.app/youthmentor |
-| EduLens | https://leo-suite-edutech-six.vercel.app/edulens |
-| CampusBot | https://leo-suite-robot.vercel.app/campusbot |
+| YouthMentor | https://leo-suite-growth-swart.vercel.app/youthmentor?locale=en |
+| EduLens | https://leo-suite-edutech-six.vercel.app/edulens?locale=en |
+| CampusBot | https://leo-suite-robot.vercel.app/campusbot?locale=en |
 
 部署完成后，更新 showcase 仓库 README 中的 Live Demo 链接。

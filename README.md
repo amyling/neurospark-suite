@@ -17,9 +17,9 @@ It explores how AI can improve:
 | Entry | Link | What to click |
 |-------|------|---------------|
 | **Portfolio home** | **[leo-suite.vercel.app](https://leo-suite.vercel.app)** | Three project cards, PDF downloads, overview video |
-| **EduLens AI** (primary) | [Live demo](https://leo-suite-edutech-six.vercel.app/edulens) | Homework analyzer → paste or upload → structured feedback |
-| **CampusBot AI** | [Live demo](https://leo-suite-robot.vercel.app/campusbot/simulator) | Select scenario → run simulation → view metrics |
-| **YouthMentor AI** | [Safety demo](https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo) | Run safety walkthrough → crisis guardrail blocks coaching |
+| **EduLens AI** (primary) | [Live demo](https://leo-suite-edutech-six.vercel.app/edulens?locale=en) | Homework analyzer → paste or upload → structured feedback |
+| **CampusBot AI** | [Live demo](https://leo-suite-robot.vercel.app/campusbot/simulator?locale=en) | Select scenario → run simulation → view metrics |
+| **YouthMentor AI** | [Safety demo](https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo?locale=en) | Run safety walkthrough → crisis guardrail blocks coaching |
 
 **Portfolio PDFs (download from site or repo):**
 
@@ -53,23 +53,23 @@ These projects are designed around **real school problems**, not toy demos.
 
 > Structured homework feedback and syllabus-aware lesson generation for teachers and students.
 
-- **Try first:** [Homework analyzer](https://leo-suite-edutech-six.vercel.app/edulens/homework-analyzer)  
-- **Also see:** [Lesson generator](https://leo-suite-edutech-six.vercel.app/edulens/lesson-generator)  
+- **Try first:** [Homework analyzer](https://leo-suite-edutech-six.vercel.app/edulens/homework-analyzer?locale=en)  
+- **Also see:** [Lesson generator](https://leo-suite-edutech-six.vercel.app/edulens/lesson-generator?locale=en)  
 - **Public docs:** [leo-suite-edutech-showcase](https://github.com/mentorkokkwa/leo-suite-edutech-showcase)  
 
 ### CampusBot AI — Robotics · Algorithms
 
 > School service robot simulator — A* navigation, dynamic re-planning, task metrics.
 
-- **Try first:** [Simulator](https://leo-suite-robot.vercel.app/campusbot/simulator)  
+- **Try first:** [Simulator](https://leo-suite-robot.vercel.app/campusbot/simulator?locale=en)  
 - **Source (public):** [leo-suite-robot](https://github.com/mentorkokkwa/leo-suite-robot)  
 
 ### YouthMentor AI — Leadership · Safety & Ethics
 
 > Safety-first digital mentor — mood check-in, 6-step reflection, crisis guardrails.
 
-- **Try first:** [Safety walkthrough](https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo)  
-- **Also see:** [Home](https://leo-suite-growth-swart.vercel.app/youthmentor)  
+- **Try first:** [Safety walkthrough](https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo?locale=en)  
+- **Also see:** [Home](https://leo-suite-growth-swart.vercel.app/youthmentor?locale=en)  
 - **Public docs:** [leo-suite-growth-showcase](https://github.com/mentorkokkwa/leo-suite-growth-showcase)  
 
 ---
@@ -92,9 +92,9 @@ These projects are designed around **real school problems**, not toy demos.
 | App | Live demo | Private deploy | Public showcase |
 |-----|-----------|----------------|-----------------|
 | **Portfolio home** | [leo-suite.vercel.app](https://leo-suite.vercel.app) | — | this repo |
-| **EduLens AI** | [edulens](https://leo-suite-edutech-six.vercel.app/edulens) | [leo-suite-edutech](https://github.com/mentorkokkwa/leo-suite-edutech) | [showcase](https://github.com/mentorkokkwa/leo-suite-edutech-showcase) |
-| **YouthMentor AI** | [youthmentor](https://leo-suite-growth-swart.vercel.app/youthmentor) | [leo-suite-growth](https://github.com/mentorkokkwa/leo-suite-growth) | [showcase](https://github.com/mentorkokkwa/leo-suite-growth-showcase) |
-| **CampusBot AI** | [campusbot](https://leo-suite-robot.vercel.app/campusbot) | [leo-suite-robot](https://github.com/mentorkokkwa/leo-suite-robot) | same (public) |
+| **EduLens AI** | [edulens](https://leo-suite-edutech-six.vercel.app/edulens?locale=en) | [leo-suite-edutech](https://github.com/mentorkokkwa/leo-suite-edutech) | [showcase](https://github.com/mentorkokkwa/leo-suite-edutech-showcase) |
+| **YouthMentor AI** | [youthmentor](https://leo-suite-growth-swart.vercel.app/youthmentor?locale=en) | [leo-suite-growth](https://github.com/mentorkokkwa/leo-suite-growth) | [showcase](https://github.com/mentorkokkwa/leo-suite-growth-showcase) |
+| **CampusBot AI** | [campusbot](https://leo-suite-robot.vercel.app/campusbot?locale=en) | [leo-suite-robot](https://github.com/mentorkokkwa/leo-suite-robot) | same (public) |
 
 **Setup guides:** [docs/PRIVATE_PUBLIC_REPOS.md](docs/PRIVATE_PUBLIC_REPOS.md) · [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
 

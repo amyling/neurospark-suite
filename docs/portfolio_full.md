@@ -4,7 +4,7 @@
 **Project:** Leo Suite — EduLens AI  
 **Category:** DSA-JC Computing / AI for Smarter Schools  
 **Version:** June 2026  
-**Live Demo:** https://leo-suite-edutech-six.vercel.app/edulens  
+**Live Demo:** https://leo-suite-edutech-six.vercel.app/edulens?locale=en  
 **Public Showcase:** [leo-suite-edutech-showcase](https://github.com/mentorkokkwa/leo-suite-edutech-showcase)  
 **Leo Suite (all apps):** [leo-suite](https://github.com/mentorkokkwa/leo-suite)
 
@@ -491,7 +491,7 @@ This protects IP while giving DSA reviewers documentation and live demo access.
 |---------|-------|
 | Team | cenzhi |
 | Project | leo-suite-edutech |
-| Production URL | https://leo-suite-edutech-six.vercel.app |
+| Production URL | https://leo-suite-edutech-six.vercel.app/edulens?locale=en |
 | Branch | `main` (auto-deploy on push) |
 | Root directory | `.` (empty) |
 
@@ -543,9 +543,9 @@ See [commercial_roadmap.md](./commercial_roadmap.md) for cost assumptions (~$0.0
 
 | App | Focus | Live URL |
 |-----|-------|----------|
-| YouthMentor AI | Student wellbeing + safety | https://leo-suite-growth-swart.vercel.app/youthmentor |
-| **EduLens AI** | Teaching & learning | https://leo-suite-edutech-six.vercel.app/edulens |
-| CampusBot AI | Robotics simulation | https://leo-suite-robot.vercel.app/campusbot |
+| YouthMentor AI | Student wellbeing + safety | https://leo-suite-growth-swart.vercel.app/youthmentor?locale=en |
+| **EduLens AI** | Teaching & learning | https://leo-suite-edutech-six.vercel.app/edulens?locale=en |
+| CampusBot AI | Robotics simulation | https://leo-suite-robot.vercel.app/campusbot?locale=en |
 
 ---
 
@@ -582,10 +582,10 @@ See [commercial_roadmap.md](./commercial_roadmap.md) for cost assumptions (~$0.0
 
 | Resource | URL |
 |----------|-----|
-| EduLens home | https://leo-suite-edutech-six.vercel.app/edulens |
-| Homework analyzer | https://leo-suite-edutech-six.vercel.app/edulens/homework-analyzer |
-| Lesson generator | https://leo-suite-edutech-six.vercel.app/edulens/lesson-generator |
-| AI status | https://leo-suite-edutech-six.vercel.app/api/edulens/ai-status |
+| EduLens home | https://leo-suite-edutech-six.vercel.app/edulens?locale=en |
+| Homework analyzer | https://leo-suite-edutech-six.vercel.app/edulens/homework-analyzer?locale=en |
+| Lesson generator | https://leo-suite-edutech-six.vercel.app/edulens/lesson-generator?locale=en |
+| AI status | https://leo-suite-edutech-six.vercel.app/api/edulens/ai-status?locale=en |
 | Vercel dashboard | https://vercel.com/cenzhi/leo-suite-edutech |
 
 ### 15.2 GitHub repositories

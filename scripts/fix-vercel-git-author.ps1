@@ -2,7 +2,7 @@
 # Run AFTER reconnecting GitHub on https://vercel.com/account/settings/authentication
 #
 # Usage:
-#   .\fix-vercel-git-author.ps1 -Email "lingcenfan@gmail.com" -Name "Cenzhi Liu"
+#   .\fix-vercel-git-author.ps1 -Email "cenzhi128@gmail.com" -Name "Cenzhi Liu"
 
 param(
     [Parameter(Mandatory = $true)]

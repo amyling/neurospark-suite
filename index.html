@@ -32,7 +32,10 @@
     }
     a { color: var(--indigo); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px 64px; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px 48px; }
+    @media (min-width: 640px) {
+      .wrap { padding: 0 24px 64px; }
+    }
 
     /* Hero */
     .hero {
@@ -193,10 +196,17 @@
     .pdf-meta { font-size: 12px; color: var(--muted); font-weight: 400; }
 
     /* Quick links table */
+    .links-table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
     .links-table {
       width: 100%;
       border-collapse: collapse;
       font-size: 14px;
+      min-width: 520px;
     }
     .links-table th, .links-table td {
       text-align: left;
@@ -216,13 +226,20 @@
       color: var(--muted);
     }
     footer a { color: var(--muted); }
+    @media (max-width: 640px) {
+      .hero { padding: 48px 0 32px; }
+      .hero h1 { font-size: 1.75rem; }
+      .card { padding: 18px; }
+      .links-table { font-size: 12px; }
+      .links-table th, .links-table td { padding: 10px 12px; }
+      .hero-actions .btn { width: 100%; justify-content: center; }
+    }
   </style>
-</head>
 <body>
   <div class="wrap">
     <header class="hero">
       <p class="badge">Built for DSA-JC Computing / AI / Robotics / Leadership Portfolio</p>
-      <h1>Leo Suite<br /><span style="color:var(--indigo)">NeuroSpark Suite Portfolio Home</span></h1>
+      <h1>Leo Suite<br /><span style="color:var(--indigo)">Portfolio Home</span></h1>
       <p class="sub">
         Three AI projects exploring how technology can improve student learning,
         school service robotics, and student wellbeing — with responsible safety design.
@@ -243,7 +260,7 @@
           <h3>EduLens AI</h3>
           <p class="value">Structured homework feedback and syllabus-aware lesson generation — helping teachers save marking time and giving students actionable mistake analysis.</p>
           <div class="card-actions">
-            <a class="btn btn-demo" href="https://leo-suite-edutech-six.vercel.app/edulens" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn btn-demo" href="https://leo-suite-edutech-six.vercel.app/edulens?locale=en" target="_blank" rel="noopener">Live Demo</a>
             <a class="btn btn-github" href="https://github.com/mentorkokkwa/leo-suite-edutech-showcase" target="_blank" rel="noopener">Showcase</a>
           </div>
         </article>
@@ -252,7 +269,7 @@
           <h3>CampusBot AI</h3>
           <p class="value">School service robot simulator with A* pathfinding, dynamic re-planning, and task metrics — a bridge from software to real campus automation.</p>
           <div class="card-actions">
-            <a class="btn btn-demo" href="https://leo-suite-robot.vercel.app/campusbot/simulator" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn btn-demo" href="https://leo-suite-robot.vercel.app/campusbot/simulator?locale=en" target="_blank" rel="noopener">Live Demo</a>
             <a class="btn btn-github" href="https://github.com/mentorkokkwa/leo-suite-robot" target="_blank" rel="noopener">GitHub</a>
           </div>
         </article>
@@ -261,7 +278,7 @@
           <h3>YouthMentor AI</h3>
           <p class="value">Safety-first digital mentor for mood check-in and structured reflection — crisis guardrails before any coaching response, privacy-first local storage.</p>
           <div class="card-actions">
-            <a class="btn btn-demo" href="https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo" target="_blank" rel="noopener">Safety Demo</a>
+            <a class="btn btn-demo" href="https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo?locale=en" target="_blank" rel="noopener">Safety Demo</a>
             <a class="btn btn-github" href="https://github.com/mentorkokkwa/leo-suite-growth-showcase" target="_blank" rel="noopener">Showcase</a>
           </div>
         </article>
@@ -276,15 +293,15 @@
           <div style="flex: 1; min-width: 200px;">
             <span class="card-flag primary">EduLens</span>
             <ul style="margin-top: 12px; padding-left: 18px; font-size: 13px; color: var(--muted); line-height: 1.7;">
-              <li><a href="https://leo-suite-edutech-six.vercel.app/edulens/reports/demo-analysis-math-quadratic" target="_blank" rel="noopener">3 student question demos</a> (Math, Physics, Chem)</li>
-              <li><a href="https://leo-suite-edutech-six.vercel.app/edulens/reports/demo-lesson-out-quadratic" target="_blank" rel="noopener">Teacher use case</a> — Sec 4 lesson pack</li>
+              <li><a href="https://leo-suite-edutech-six.vercel.app/edulens/reports/demo-analysis-math-quadratic?locale=en" target="_blank" rel="noopener">3 student question demos</a> (Math, Physics, Chem)</li>
+              <li><a href="https://leo-suite-edutech-six.vercel.app/edulens/reports/demo-lesson-out-quadratic?locale=en" target="_blank" rel="noopener">Teacher use case</a> — Sec 4 lesson pack</li>
               <li>PDF report export on any demo report page</li>
             </ul>
           </div>
           <div style="flex: 1; min-width: 200px;">
             <span class="card-flag robot">CampusBot</span>
             <ul style="margin-top: 12px; padding-left: 18px; font-size: 13px; color: var(--muted); line-height: 1.7;">
-              <li><a href="https://leo-suite-robot.vercel.app/campusbot" target="_blank" rel="noopener">3-scenario metrics comparison</a> on home page</li>
+              <li><a href="https://leo-suite-robot.vercel.app/campusbot?locale=en" target="_blank" rel="noopener">3-scenario metrics comparison</a> on home page</li>
               <li>A* algorithm flowchart on home page</li>
               <li>Live simulator with exportable report</li>
             </ul>
@@ -292,9 +309,9 @@
           <div style="flex: 1; min-width: 200px;">
             <span class="card-flag wellbeing">YouthMentor</span>
             <ul style="margin-top: 12px; padding-left: 18px; font-size: 13px; color: var(--muted); line-height: 1.7;">
-              <li><a href="https://leo-suite-growth-swart.vercel.app/youthmentor/safety-policy" target="_blank" rel="noopener">Safety policy</a></li>
-              <li><a href="https://leo-suite-growth-swart.vercel.app/youthmentor/privacy" target="_blank" rel="noopener">Privacy statement</a></li>
-              <li><a href="https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo" target="_blank" rel="noopener">High-risk safety demo</a></li>
+              <li><a href="https://leo-suite-growth-swart.vercel.app/youthmentor/safety-policy?locale=en" target="_blank" rel="noopener">Safety policy</a></li>
+              <li><a href="https://leo-suite-growth-swart.vercel.app/youthmentor/privacy?locale=en" target="_blank" rel="noopener">Privacy statement</a></li>
+              <li><a href="https://leo-suite-growth-swart.vercel.app/youthmentor/safety-demo?locale=en" target="_blank" rel="noopener">High-risk safety demo</a></li>
             </ul>
           </div>
         </article>
@@ -362,6 +379,7 @@
     <section id="links">
       <h2>All Live Links</h2>
       <p class="lead">Everything in one place for portfolio review.</p>
+      <div class="links-table-wrap">
       <table class="links-table">
         <thead>
           <tr><th>Project</th><th>Live Demo</th><th>Public Docs</th></tr>
@@ -374,21 +392,22 @@
           </tr>
           <tr>
             <td>EduLens AI</td>
-            <td><a href="https://leo-suite-edutech-six.vercel.app/edulens">Live Demo</a></td>
+            <td><a href="https://leo-suite-edutech-six.vercel.app/edulens?locale=en">Live Demo</a></td>
             <td><a href="https://github.com/mentorkokkwa/leo-suite-edutech-showcase">Showcase</a></td>
           </tr>
           <tr>
             <td>CampusBot AI</td>
-            <td><a href="https://leo-suite-robot.vercel.app/campusbot">Live Demo</a></td>
+            <td><a href="https://leo-suite-robot.vercel.app/campusbot?locale=en">Live Demo</a></td>
             <td><a href="https://github.com/mentorkokkwa/leo-suite-robot">GitHub</a></td>
           </tr>
           <tr>
             <td>YouthMentor AI</td>
-            <td><a href="https://leo-suite-growth-swart.vercel.app/youthmentor">Live Demo</a></td>
+            <td><a href="https://leo-suite-growth-swart.vercel.app/youthmentor?locale=en">Live Demo</a></td>
             <td><a href="https://github.com/mentorkokkwa/leo-suite-growth-showcase">Showcase</a></td>
           </tr>
         </tbody>
       </table>
+      </div>
     </section>
 
     <footer>

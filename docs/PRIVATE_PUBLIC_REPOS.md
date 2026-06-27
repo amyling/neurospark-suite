@@ -119,9 +119,9 @@ After Vercel deploy, update **leo-suite meta repo** README with production URLs 
 
 | App | Production URL |
 |-----|----------------|
-| YouthMentor | `https://leo-suite-growth-swart.vercel.app/youthmentor` |
-| EduLens | `https://leo-suite-edutech-six.vercel.app/edulens` |
-| CampusBot | `https://leo-suite-robot.vercel.app/campusbot` |
+| YouthMentor | `https://leo-suite-growth-swart.vercel.app/youthmentor?locale=en` |
+| EduLens | `https://leo-suite-edutech-six.vercel.app/edulens?locale=en` |
+| CampusBot | `https://leo-suite-robot.vercel.app/campusbot?locale=en` |
 
 Copy exact domains from [vercel.com/cenzhi](https://vercel.com/cenzhi) → project → **Domains**.
 
